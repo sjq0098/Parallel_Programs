@@ -1,0 +1,65 @@
+Size: 1024 elements Average copytime:0.2
+Navie result: 50408, Average Time: 2.54 us
+Uroll result: 50408, Average Time: 0.16 us
+Pair  result: 50408, Average Time: 0.4 us
+----------------------------------------
+Size: 1035 elements Average copytime:0.2
+Navie result: 50633, Average Time: 0.98 us
+Uroll result: 50633, Average Time: 0.18 us
+Pair  result: 50633, Average Time: 0.38 us
+----------------------------------------
+Size: 2048 elements Average copytime:0.3
+Navie result: 100627, Average Time: 2.32 us
+Uroll result: 100627, Average Time: 0.3 us
+Pair  result: 100627, Average Time: 0.66 us
+----------------------------------------
+Size: 4096 elements Average copytime:0.72
+Navie result: 201761, Average Time: 4.18 us
+Uroll result: 201761, Average Time: 0.46 us
+Pair  result: 201761, Average Time: 1.42 us
+----------------------------------------
+Size: 8192 elements Average copytime:1.26
+Navie result: 403178, Average Time: 8.9 us
+Uroll result: 403178, Average Time: 1.48 us
+Pair  result: 403178, Average Time: 2.88 us
+----------------------------------------
+Size: 16384 elements Average copytime:37.22
+Navie result: 812693, Average Time: 15.9 us
+Uroll result: 812693, Average Time: 7.08 us
+Pair  result: 812693, Average Time: 9.22 us
+----------------------------------------
+Size: 32768 elements Average copytime:70.7
+Navie result: 1.62794e+06, Average Time: 15.16 us
+Uroll result: 1.62794e+06, Average Time: 0.48 us
+Pair  result: 1.62794e+06, Average Time: 11.24 us
+----------------------------------------
+Size: 65536 elements Average copytime:30.82
+Navie result: 3.23798e+06, Average Time: 61.74 us
+Uroll result: 3.23798e+06, Average Time: 39.36 us
+Pair  result: 3.23798e+06, Average Time: 59.82 us
+----------------------------------------
+Size: 131072 elements Average copytime:221.06
+Navie result: 6.47973e+06, Average Time: 129.88 us
+Uroll result: 6.47973e+06, Average Time: 81.9 us
+Pair  result: 6.47973e+06, Average Time: 138.46 us
+----------------------------------------
+Size: 231311 elements Average copytime:371.1
+Navie result: 1.14354e+07, Average Time: 183.66 us
+Uroll result: 1.14354e+07, Average Time: 240.6 us
+Pair  result: 1.14354e+07, Average Time: 252.66 us
+----------------------------------------
+Size: 262144 elements Average copytime:577.78
+Navie result: 1.29807e+07, Average Time: 168.14 us
+Uroll result: 1.29807e+07, Average Time: 195.04 us
+Pair  result: 1.29807e+07, Average Time: 301.52 us
+----------------------------------------
+Size: 524288 elements Average copytime:787.12
+Navie result: 2.59541e+07, Average Time: 314.68 us
+Uroll result: 2.59541e+07, Average Time: 301.22 us
+Pair  result: 2.59541e+07, Average Time: 468.68 us
+----------------------------------------
+Size: 2313119 elements Average copytime:4061.74
+Navie result: 1.1451e+08, Average Time: 1575.84 us
+Uroll result: 1.1451e+08, Average Time: 1360.16 us
+Pair  result: 1.1451e+08, Average Time: 2522.8 us
+----------------------------------------

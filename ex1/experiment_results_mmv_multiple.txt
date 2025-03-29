@@ -1,30 +1,30 @@
 Size: 128x128
-Naive Time: 13540 us
-Naive Unroll Time: 9429.9 us
-Cache Optimized Time: 10745.9 us
+Naive Time: 8028.2 us
+Naive Unroll Time: 7569.4 us
+Cache Optimized Time: 7429.3 us
 --------------------------
 Size: 150x150
-Naive Time: 17415.6 us
-Naive Unroll Time: 13187.8 us
-Cache Optimized Time: 15693.9 us
+Naive Time: 12179.1 us
+Naive Unroll Time: 10953.2 us
+Cache Optimized Time: 11000.5 us
 --------------------------
 Size: 256x256
-Naive Time: 55350.5 us
-Naive Unroll Time: 47774.2 us
-Cache Optimized Time: 54470.7 us
+Naive Time: 48499.3 us
+Naive Unroll Time: 38396.2 us
+Cache Optimized Time: 27369.6 us
 --------------------------
 Size: 512x512
-Naive Time: 352834 us
-Naive Unroll Time: 291764 us
-Cache Optimized Time: 123387 us
+Naive Time: 279459 us
+Naive Unroll Time: 268174 us
+Cache Optimized Time: 112442 us
 --------------------------
 Size: 1024x1024
-Naive Time: 1.17646e+06 us
-Naive Unroll Time: 1.08716e+06 us
-Cache Optimized Time: 480447 us
+Naive Time: 1.45637e+06 us
+Naive Unroll Time: 1.44914e+06 us
+Cache Optimized Time: 453760 us
 --------------------------
 Size: 2048x2048
-Naive Time: 1.25325e+07 us
-Naive Unroll Time: 1.13787e+07 us
-Cache Optimized Time: 3.43659e+06 us
+Naive Time: 1.36049e+07 us
+Naive Unroll Time: 1.39215e+07 us
+Cache Optimized Time: 3.87694e+06 us
 --------------------------

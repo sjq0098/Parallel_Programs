@@ -14,7 +14,11 @@ df = pd.DataFrame(data)
 
 # 按1.png、2.png、3.png顺序排序
 df = df.set_index("File Name").loc[["mmv_1", "mmv_2", "mmv_3"]].reset_index()
-df = df.rename(columns={'mmv_1': 'Navie', 'mmv_2': 'Navie_Uroll','mmv_3':'Cache'})
+df["File Name"] = df["File Name"].replace({
+    "mmv_1": "Navie",
+    "mmv_2": "Navie_Unroll",
+    "mmv_3": "Cache"
+})
 
 # 转换单位（亿/十亿）
 df["Clockticks (未勾选)"] = df["Clockticks (未勾选)"] / 1e9

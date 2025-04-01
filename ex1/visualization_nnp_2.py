@@ -12,7 +12,11 @@ data = {
 }
 
 df = pd.DataFrame(data)
-df=df.rename(columns={'4.png': 'Navie', '5.png': 'Pair','6.png':'Navie_Unroll'})
+df["File Name"] = df["File Name"].replace({
+    "4.png": "Navie",
+    "5.png": "Pair",
+    "6.png": "Navie_Unroll"
+})
 
 # 单位转换（百万）
 df["Clockticks (未勾选)"] = df["Clockticks (未勾选)"] / 1e6

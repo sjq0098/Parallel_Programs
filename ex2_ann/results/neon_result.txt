@@ -1,0 +1,21 @@
+暴力串行：
+average recall: 0.99995
+average latency (us): 16147.3
+暴力并行（Neon）：
+average recall: 0.99995
+average latency (us): 1015.31
+SQ_Neon(openmp):
+average recall: 0.979653
+average latency (us): 997.684
+PQ8:
+average recall: 0.238651
+average latency (us): 1210.82
+PQ16+rerank(openmp):
+average recall: 0.975653
+average latency (us): 580.727
+PQ16+rerank:
+average recall: 0.927106
+average latency (us): 2683.44
+SQ_Neon:
+average recall: 0.979653
+average latency (us): 7909.72

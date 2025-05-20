@@ -1,0 +1,3 @@
+Method,Recall,Latency(us)
+Flat-Search(暴力搜索),1,3740
+Flat-Search-SIMD(SIMD优化暴力搜索),1,2476

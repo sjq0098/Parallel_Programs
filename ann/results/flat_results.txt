@@ -1,0 +1,3 @@
+Method: Flat Search
+Average recall: 0.99995
+Average latency (us): 2795.36

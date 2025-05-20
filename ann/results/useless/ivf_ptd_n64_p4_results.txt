@@ -1,0 +1,3 @@
+Method: IVF PTD (N=64, P=4)
+Average recall: 0.892302
+Average latency (us): 1592.07

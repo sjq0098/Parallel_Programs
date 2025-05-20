@@ -1,0 +1,3 @@
+Method: IVF Flat (N=512, P=16)
+Average recall: 0.937103
+Average latency (us): 925.808

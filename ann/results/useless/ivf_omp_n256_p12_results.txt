@@ -1,0 +1,3 @@
+Method: IVF OMP (N=256, P=12)
+Average recall: 0.946803
+Average latency (us): 418.835

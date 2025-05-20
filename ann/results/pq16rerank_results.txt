@@ -1,0 +1,3 @@
+Method: PQ16 Rerank Search
+Average recall: 0.926455
+Average latency (us): 964.789

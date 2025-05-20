@@ -1,0 +1,65 @@
+#!/bin/bash
+
+# 确保目录存在
+mkdir -p build 2>/dev/null || mkdir build
+
+# 直接在Windows平台上编译
+echo "编译程序..."
+g++ -std=c++14 -O3 -mavx2 -mfma -fopenmp -D_WIN32 -o build/ann_benchmark.exe main_op.cc -Ihnswlib -I.
+
+# 检查编译结果
+if [ $? -eq 0 ]; then
+    echo "编译成功，执行文件位于 build/ann_benchmark.exe"
+    echo "使用方法："
+    echo "  ./build/ann_benchmark            # 测试所有方法"
+    echo "  ./build/ann_benchmark flat       # 只测试原始暴力搜索"
+    echo "  ./build/ann_benchmark sq         # 只测试标量量化暴力搜索"
+    echo "  ./build/ann_benchmark pq4        # 只测试PQ4搜索"
+    echo "  ./build/ann_benchmark pq8        # 只测试PQ8搜索"
+    echo "  ./build/ann_benchmark pq16       # 只测试PQ16搜索"
+    echo "  ./build/ann_benchmark pq32       # 只测试PQ32搜索"
+    echo "  ./build/ann_benchmark pq4rerank  # 只测试PQ4+重排序搜索"
+    echo "  ./build/ann_benchmark pq8rerank  # 只测试PQ8+重排序搜索"
+    echo "  ./build/ann_benchmark pq16rerank # 只测试PQ16+重排序搜索"
+    echo "  ./build/ann_benchmark pq32rerank # 只测试PQ32+重排序搜索"
+    echo "  ./build/ann_benchmark ivf_n64_p4    # 只测试IVF Flat (N=64, P=4) 搜索"
+    echo "  ./build/ann_benchmark ivf_n64_p8    # 只测试IVF Flat (N=64, P=8) 搜索"
+    echo "  ./build/ann_benchmark ivf_n64_p12   # 只测试IVF Flat (N=64, P=12) 搜索"
+    echo "  ./build/ann_benchmark ivf_n128_p8   # 只测试IVF Flat (N=128, P=8) 搜索"
+    echo "  ./build/ann_benchmark ivf_n128_p12  # 只测试IVF Flat (N=128, P=12) 搜索"
+    echo "  ./build/ann_benchmark ivf_n128_p16  # 只测试IVF Flat (N=128, P=16) 搜索"
+    echo "  ./build/ann_benchmark ivf_n256_p12  # 只测试IVF Flat (N=256, P=12) 搜索"
+    echo "  ./build/ann_benchmark ivf_n256_p16  # 只测试IVF Flat (N=256, P=16) 搜索"
+    echo "  ./build/ann_benchmark ivf_n256_p24  # 只测试IVF Flat (N=256, P=24) 搜索"
+    echo "  ./build/ann_benchmark ivf_n512_p16  # 只测试IVF Flat (N=512, P=16) 搜索"
+    echo "  ./build/ann_benchmark ivf_n512_p20  # 只测试IVF Flat (N=512, P=20) 搜索"
+    echo "  ./build/ann_benchmark ivf_n512_p32  # 只测试IVF Flat (N=512, P=32) 搜索"
+    echo "  # OpenMP优化版IVF方法"
+    echo "  ./build/ann_benchmark ivf_omp_n64_p4    # 只测试IVF OMP (N=64, P=4) 搜索"
+    echo "  ./build/ann_benchmark ivf_omp_n64_p8    # 只测试IVF OMP (N=64, P=8) 搜索"
+    echo "  ./build/ann_benchmark ivf_omp_n64_p12   # 只测试IVF OMP (N=64, P=12) 搜索"
+    echo "  ./build/ann_benchmark ivf_omp_n128_p8   # 只测试IVF OMP (N=128, P=8) 搜索"
+    echo "  ./build/ann_benchmark ivf_omp_n128_p12  # 只测试IVF OMP (N=128, P=12) 搜索"
+    echo "  ./build/ann_benchmark ivf_omp_n128_p16  # 只测试IVF OMP (N=128, P=16) 搜索"
+    echo "  ./build/ann_benchmark ivf_omp_n256_p12  # 只测试IVF OMP (N=256, P=12) 搜索"
+    echo "  ./build/ann_benchmark ivf_omp_n256_p16  # 只测试IVF OMP (N=256, P=16) 搜索"
+    echo "  ./build/ann_benchmark ivf_omp_n256_p24  # 只测试IVF OMP (N=256, P=24) 搜索"
+    echo "  ./build/ann_benchmark ivf_omp_n512_p16  # 只测试IVF OMP (N=512, P=16) 搜索"
+    echo "  ./build/ann_benchmark ivf_omp_n512_p20  # 只测试IVF OMP (N=512, P=20) 搜索"
+    echo "  ./build/ann_benchmark ivf_omp_n512_p32  # 只测试IVF OMP (N=512, P=32) 搜索"
+    echo "  # pthread优化版IVF方法"
+    echo "  ./build/ann_benchmark ivf_ptd_n64_p4    # 只测试IVF PTD (N=64, P=4) 搜索"
+    echo "  ./build/ann_benchmark ivf_ptd_n64_p8    # 只测试IVF PTD (N=64, P=8) 搜索"
+    echo "  ./build/ann_benchmark ivf_ptd_n64_p12   # 只测试IVF PTD (N=64, P=12) 搜索"
+    echo "  ./build/ann_benchmark ivf_ptd_n128_p8   # 只测试IVF PTD (N=128, P=8) 搜索"
+    echo "  ./build/ann_benchmark ivf_ptd_n128_p12  # 只测试IVF PTD (N=128, P=12) 搜索"
+    echo "  ./build/ann_benchmark ivf_ptd_n128_p16  # 只测试IVF PTD (N=128, P=16) 搜索"
+    echo "  ./build/ann_benchmark ivf_ptd_n256_p12  # 只测试IVF PTD (N=256, P=12) 搜索"
+    echo "  ./build/ann_benchmark ivf_ptd_n256_p16  # 只测试IVF PTD (N=256, P=16) 搜索"
+    echo "  ./build/ann_benchmark ivf_ptd_n256_p24  # 只测试IVF PTD (N=256, P=24) 搜索"
+    echo "  ./build/ann_benchmark ivf_ptd_n512_p16  # 只测试IVF PTD (N=512, P=16) 搜索"
+    echo "  ./build/ann_benchmark ivf_ptd_n512_p20  # 只测试IVF PTD (N=512, P=20) 搜索"
+    echo "  ./build/ann_benchmark ivf_ptd_n512_p32  # 只测试IVF PTD (N=512, P=32) 搜索"
+else
+    echo "编译失败，请检查错误信息"
+fi 

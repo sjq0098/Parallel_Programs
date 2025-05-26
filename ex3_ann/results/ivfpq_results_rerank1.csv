@@ -1,0 +1,2521 @@
+Method,Configuration,Recall,Latency(us)
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=128,m=16,nprobe=4,0.297,82
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=128,m=16,nprobe=8,0.2395,167
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=128,m=16,nprobe=12,0.21,163
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=128,m=16,nprobe=16,0.194,195
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=128,m=16,nprobe=20,0.1815,228
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=128,m=16,nprobe=24,0.1695,286
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=128,m=16,nprobe=32,0.155,377
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=128,m=16,nprobe=64,0.126,709
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=128,m=16,nprobe=128,0.11,1436
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=128,m=32,nprobe=4,0.3265,124
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=128,m=32,nprobe=8,0.2635,194
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=128,m=32,nprobe=12,0.2445,295
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=128,m=32,nprobe=16,0.23,361
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=128,m=32,nprobe=20,0.2125,428
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=128,m=32,nprobe=24,0.2,500
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=128,m=32,nprobe=32,0.18,675
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=128,m=32,nprobe=64,0.1465,1312
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=128,m=32,nprobe=128,0.1265,2596
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=128,m=8,nprobe=4,0.2125,46
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=128,m=8,nprobe=8,0.1635,82
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=128,m=8,nprobe=12,0.1485,106
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=128,m=8,nprobe=16,0.137,141
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=128,m=8,nprobe=20,0.127,159
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=128,m=8,nprobe=24,0.119,196
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=128,m=8,nprobe=32,0.1075,226
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=128,m=8,nprobe=64,0.0905,412
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=128,m=8,nprobe=128,0.0755,908
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=256,m=16,nprobe=4,0.311,58
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=256,m=16,nprobe=8,0.261,81
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=256,m=16,nprobe=12,0.228,103
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=256,m=16,nprobe=16,0.2065,114
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=256,m=16,nprobe=20,0.1905,153
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=256,m=16,nprobe=24,0.179,197
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=256,m=16,nprobe=32,0.1615,232
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=256,m=16,nprobe=64,0.13,453
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=256,m=16,nprobe=128,0.1025,687
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=256,m=32,nprobe=4,0.3345,93
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=256,m=32,nprobe=8,0.2845,140
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=256,m=32,nprobe=12,0.2505,174
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=256,m=32,nprobe=16,0.2305,202
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=256,m=32,nprobe=20,0.215,263
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=256,m=32,nprobe=24,0.2065,399
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=256,m=32,nprobe=32,0.1855,577
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=256,m=32,nprobe=64,0.144,893
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=256,m=32,nprobe=128,0.1165,1293
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=256,m=8,nprobe=4,0.246,45
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=256,m=8,nprobe=8,0.203,68
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=256,m=8,nprobe=12,0.174,65
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=256,m=8,nprobe=16,0.157,83
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=256,m=8,nprobe=20,0.1415,91
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=256,m=8,nprobe=24,0.133,117
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=256,m=8,nprobe=32,0.115,142
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=256,m=8,nprobe=64,0.082,234
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=256,m=8,nprobe=128,0.0615,427
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=512,m=16,nprobe=4,0.3335,71
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=512,m=16,nprobe=8,0.286,73
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=512,m=16,nprobe=12,0.2525,105
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=512,m=16,nprobe=16,0.2425,114
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=512,m=16,nprobe=20,0.218,131
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=512,m=16,nprobe=24,0.199,122
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=512,m=16,nprobe=32,0.177,133
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=512,m=16,nprobe=64,0.144,221
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=512,m=16,nprobe=128,0.106,399
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=512,m=32,nprobe=4,0.3635,89
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=512,m=32,nprobe=8,0.3255,117
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=512,m=32,nprobe=12,0.2875,147
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=512,m=32,nprobe=16,0.2685,180
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=512,m=32,nprobe=20,0.244,168
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=512,m=32,nprobe=24,0.231,180
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=512,m=32,nprobe=32,0.208,237
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=512,m=32,nprobe=64,0.1785,384
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=512,m=32,nprobe=128,0.133,707
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=512,m=8,nprobe=4,0.272,58
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=512,m=8,nprobe=8,0.2285,61
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=512,m=8,nprobe=12,0.1935,64
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=512,m=8,nprobe=16,0.177,66
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=512,m=8,nprobe=20,0.158,77
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=512,m=8,nprobe=24,0.151,101
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=512,m=8,nprobe=32,0.1345,105
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=512,m=8,nprobe=64,0.101,164
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=512,m=8,nprobe=128,0.074,271
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=64,m=16,nprobe=4,0.2935,133
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=64,m=16,nprobe=8,0.249,223
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=64,m=16,nprobe=12,0.2305,284
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=64,m=16,nprobe=16,0.214,369
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=64,m=16,nprobe=20,0.203,480
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=64,m=16,nprobe=24,0.194,611
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=64,m=16,nprobe=32,0.181,742
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial),nlist=64,m=16,nprobe=64,0.155,1439
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=64,m=32,nprobe=4,0.3255,197
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=64,m=32,nprobe=8,0.274,406
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=64,m=32,nprobe=12,0.26,550
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=64,m=32,nprobe=16,0.239,681
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=64,m=32,nprobe=20,0.231,854
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=64,m=32,nprobe=24,0.2185,936
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=64,m=32,nprobe=32,0.2045,1291
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial),nlist=64,m=32,nprobe=64,0.177,2619
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=64,m=8,nprobe=4,0.2225,71
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=64,m=8,nprobe=8,0.186,141
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=64,m=8,nprobe=12,0.1655,229
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=64,m=8,nprobe=16,0.1475,271
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=64,m=8,nprobe=20,0.134,298
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=64,m=8,nprobe=24,0.1285,322
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=64,m=8,nprobe=32,0.124,435
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial),nlist=64,m=8,nprobe=64,0.1075,792
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=16,nprobe=4,0.297,673
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=16,nprobe=8,0.2395,538
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=16,nprobe=12,0.21,439
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=16,nprobe=16,0.194,566
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=16,nprobe=20,0.1815,519
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=16,nprobe=24,0.1695,556
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=16,nprobe=32,0.155,534
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=16,nprobe=64,0.126,543
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=16,nprobe=128,0.11,680
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=32,nprobe=4,0.3265,482
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=32,nprobe=8,0.2635,483
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=32,nprobe=12,0.2445,485
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=32,nprobe=16,0.23,554
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=32,nprobe=20,0.2125,701
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=32,nprobe=24,0.2,567
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=32,nprobe=32,0.18,565
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=32,nprobe=64,0.1465,722
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=32,nprobe=128,0.1265,1081
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=8,nprobe=4,0.2125,444
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=8,nprobe=8,0.1635,440
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=8,nprobe=12,0.1485,465
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=8,nprobe=16,0.137,443
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=8,nprobe=20,0.127,423
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=8,nprobe=24,0.119,434
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=8,nprobe=32,0.1075,418
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=8,nprobe=64,0.0905,468
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=128,m=8,nprobe=128,0.0755,546
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=16,nprobe=4,0.311,395
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=16,nprobe=8,0.261,381
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=16,nprobe=12,0.228,457
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=16,nprobe=16,0.2065,561
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=16,nprobe=20,0.1905,601
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=16,nprobe=24,0.179,523
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=16,nprobe=32,0.1615,465
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=16,nprobe=64,0.13,490
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=16,nprobe=128,0.1025,520
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=32,nprobe=4,0.3345,438
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=32,nprobe=8,0.2845,412
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=32,nprobe=12,0.2505,408
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=32,nprobe=16,0.2305,537
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=32,nprobe=20,0.215,512
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=32,nprobe=24,0.2065,605
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=32,nprobe=32,0.1855,529
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=32,nprobe=64,0.144,570
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=32,nprobe=128,0.1165,678
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=8,nprobe=4,0.246,373
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=8,nprobe=8,0.203,378
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=8,nprobe=12,0.174,369
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=8,nprobe=16,0.157,373
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=8,nprobe=20,0.1415,420
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=8,nprobe=24,0.133,418
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=8,nprobe=32,0.115,504
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=8,nprobe=64,0.082,540
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=256,m=8,nprobe=128,0.0615,488
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=16,nprobe=4,0.3335,395
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=16,nprobe=8,0.286,424
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=16,nprobe=12,0.2525,406
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=16,nprobe=16,0.2425,402
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=16,nprobe=20,0.218,507
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=16,nprobe=24,0.199,428
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=16,nprobe=32,0.177,491
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=16,nprobe=64,0.144,522
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=16,nprobe=128,0.106,563
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=32,nprobe=4,0.3635,505
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=32,nprobe=8,0.3255,483
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=32,nprobe=12,0.2875,447
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=32,nprobe=16,0.2685,421
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=32,nprobe=20,0.244,419
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=32,nprobe=24,0.231,428
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=32,nprobe=32,0.208,489
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=32,nprobe=64,0.1785,658
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=32,nprobe=128,0.133,730
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=8,nprobe=4,0.272,498
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=8,nprobe=8,0.2285,475
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=8,nprobe=12,0.1935,414
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=8,nprobe=16,0.177,419
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=8,nprobe=20,0.158,411
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=8,nprobe=24,0.151,376
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=8,nprobe=32,0.1345,437
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=8,nprobe=64,0.101,475
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=512,m=8,nprobe=128,0.074,492
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=16,nprobe=4,0.2935,528
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=16,nprobe=8,0.249,522
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=16,nprobe=12,0.2305,563
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=16,nprobe=16,0.214,460
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=16,nprobe=20,0.203,484
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=16,nprobe=24,0.194,470
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=16,nprobe=32,0.181,486
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=16,nprobe=64,0.155,600
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=32,nprobe=4,0.3255,470
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=32,nprobe=8,0.274,558
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=32,nprobe=12,0.26,535
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=32,nprobe=16,0.239,648
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=32,nprobe=20,0.231,552
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=32,nprobe=24,0.2185,623
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=32,nprobe=32,0.2045,599
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=32,nprobe=64,0.177,868
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=8,nprobe=4,0.2225,382
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=8,nprobe=8,0.186,403
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=8,nprobe=12,0.1655,419
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=8,nprobe=16,0.1475,390
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=8,nprobe=20,0.134,446
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=8,nprobe=24,0.1285,450
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=8,nprobe=32,0.124,449
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP),nlist=64,m=8,nprobe=64,0.1075,545
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=128,m=16,nprobe=4,0.297,1820
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=128,m=16,nprobe=8,0.2395,2173
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=128,m=16,nprobe=12,0.21,1805
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=128,m=16,nprobe=16,0.194,2154
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=128,m=16,nprobe=20,0.1815,2100
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=128,m=16,nprobe=24,0.1695,2181
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=128,m=16,nprobe=32,0.155,2262
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=128,m=16,nprobe=64,0.126,2805
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=128,m=16,nprobe=128,0.11,3931
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=128,m=32,nprobe=4,0.3265,1843
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=128,m=32,nprobe=8,0.2635,1866
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=128,m=32,nprobe=12,0.2445,2097
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=128,m=32,nprobe=16,0.23,2019
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=128,m=32,nprobe=20,0.2125,2212
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=128,m=32,nprobe=24,0.2,2233
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=128,m=32,nprobe=32,0.18,2258
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=128,m=32,nprobe=64,0.1465,3202
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=128,m=32,nprobe=128,0.1265,4176
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=128,m=8,nprobe=4,0.2125,1832
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=128,m=8,nprobe=8,0.1635,1853
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=128,m=8,nprobe=12,0.1485,1990
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=128,m=8,nprobe=16,0.137,2018
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=128,m=8,nprobe=20,0.127,2080
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=128,m=8,nprobe=24,0.119,2153
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=128,m=8,nprobe=32,0.1075,2282
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=128,m=8,nprobe=64,0.0905,2403
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=128,m=8,nprobe=128,0.0755,3513
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=256,m=16,nprobe=4,0.311,1826
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=256,m=16,nprobe=8,0.261,1937
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=256,m=16,nprobe=12,0.228,2085
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=256,m=16,nprobe=16,0.2065,1869
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=256,m=16,nprobe=20,0.1905,1954
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=256,m=16,nprobe=24,0.179,1957
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=256,m=16,nprobe=32,0.1615,2140
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=256,m=16,nprobe=64,0.13,2263
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=256,m=16,nprobe=128,0.1025,2629
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=256,m=32,nprobe=4,0.3345,2000
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=256,m=32,nprobe=8,0.2845,1898
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=256,m=32,nprobe=12,0.2505,2069
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=256,m=32,nprobe=16,0.2305,1935
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=256,m=32,nprobe=20,0.215,1999
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=256,m=32,nprobe=24,0.2065,2121
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=256,m=32,nprobe=32,0.1855,1967
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=256,m=32,nprobe=64,0.144,2510
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=256,m=32,nprobe=128,0.1165,2572
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=256,m=8,nprobe=4,0.246,1931
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=256,m=8,nprobe=8,0.203,1922
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=256,m=8,nprobe=12,0.174,2152
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=256,m=8,nprobe=16,0.157,1898
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=256,m=8,nprobe=20,0.1415,1750
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=256,m=8,nprobe=24,0.133,2084
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=256,m=8,nprobe=32,0.115,1847
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=256,m=8,nprobe=64,0.082,2377
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=256,m=8,nprobe=128,0.0615,2612
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=512,m=16,nprobe=4,0.3335,2138
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=512,m=16,nprobe=8,0.286,1962
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=512,m=16,nprobe=12,0.2525,1982
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=512,m=16,nprobe=16,0.2425,1999
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=512,m=16,nprobe=20,0.218,2004
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=512,m=16,nprobe=24,0.199,2042
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=512,m=16,nprobe=32,0.177,2051
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=512,m=16,nprobe=64,0.144,2191
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=512,m=16,nprobe=128,0.106,2155
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=512,m=32,nprobe=4,0.3635,1872
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=512,m=32,nprobe=8,0.3255,1972
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=512,m=32,nprobe=12,0.2875,2043
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=512,m=32,nprobe=16,0.2685,2574
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=512,m=32,nprobe=20,0.244,1881
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=512,m=32,nprobe=24,0.231,1947
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=512,m=32,nprobe=32,0.208,2380
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=512,m=32,nprobe=64,0.1785,2211
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=512,m=32,nprobe=128,0.133,2519
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=512,m=8,nprobe=4,0.272,1920
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=512,m=8,nprobe=8,0.2285,2155
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=512,m=8,nprobe=12,0.1935,1805
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=512,m=8,nprobe=16,0.177,2286
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=512,m=8,nprobe=20,0.158,2150
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=512,m=8,nprobe=24,0.151,2404
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=512,m=8,nprobe=32,0.1345,2058
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=512,m=8,nprobe=64,0.101,1887
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=512,m=8,nprobe=128,0.074,2464
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=64,m=16,nprobe=4,0.2935,1758
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=64,m=16,nprobe=8,0.249,1931
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=64,m=16,nprobe=12,0.2305,2291
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=64,m=16,nprobe=16,0.214,2378
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=64,m=16,nprobe=20,0.203,2310
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=64,m=16,nprobe=24,0.194,2382
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=64,m=16,nprobe=32,0.181,2561
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread),nlist=64,m=16,nprobe=64,0.155,3794
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=64,m=32,nprobe=4,0.3255,2050
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=64,m=32,nprobe=8,0.274,2194
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=64,m=32,nprobe=12,0.26,2318
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=64,m=32,nprobe=16,0.239,2361
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=64,m=32,nprobe=20,0.231,2599
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=64,m=32,nprobe=24,0.2185,2695
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=64,m=32,nprobe=32,0.2045,3535
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread),nlist=64,m=32,nprobe=64,0.177,4381
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=64,m=8,nprobe=4,0.2225,1976
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=64,m=8,nprobe=8,0.186,2120
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=64,m=8,nprobe=12,0.1655,2288
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=64,m=8,nprobe=16,0.1475,2496
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=64,m=8,nprobe=20,0.134,2198
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=64,m=8,nprobe=24,0.1285,2566
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=64,m=8,nprobe=32,0.124,2399
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread),nlist=64,m=8,nprobe=64,0.1075,3506
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=4,L=100,0.7475,142
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=4,L=200,0.826,184
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=4,L=500,0.869,297
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=8,L=100,0.705,238
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=8,L=200,0.822,260
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=8,L=500,0.917,444
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=12,L=100,0.658,325
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=12,L=200,0.795,359
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=12,L=500,0.9165,457
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=16,L=100,0.6145,384
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=16,L=200,0.768,429
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=16,L=500,0.9065,569
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=20,L=100,0.5845,433
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=20,L=200,0.739,512
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=20,L=500,0.8905,607
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=24,L=100,0.5575,597
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=24,L=200,0.7155,659
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=24,L=500,0.8675,710
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=32,L=100,0.5255,776
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=32,L=200,0.681,773
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=32,L=500,0.84,856
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=64,L=100,0.4455,1342
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=64,L=200,0.593,1327
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=64,L=500,0.7755,1483
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=128,L=100,0.3885,3092
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=128,L=200,0.5095,3036
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=16,nprobe=128,L=500,0.6965,3187
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=4,L=100,0.7735,203
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=4,L=200,0.8405,243
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=4,L=500,0.8705,315
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=8,L=100,0.757,375
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=8,L=200,0.852,397
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=8,L=500,0.926,469
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=12,L=100,0.7195,432
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=12,L=200,0.8395,512
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=12,L=500,0.9335,582
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=16,L=100,0.6775,534
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=16,L=200,0.8125,688
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=16,L=500,0.931,737
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=20,L=100,0.642,731
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=20,L=200,0.7935,686
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=20,L=500,0.9185,859
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=24,L=100,0.609,789
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=24,L=200,0.769,854
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=24,L=500,0.9095,927
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=32,L=100,0.578,1047
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=32,L=200,0.735,1220
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=32,L=500,0.8885,1201
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=64,L=100,0.5025,1918
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=64,L=200,0.6535,2089
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=64,L=500,0.8225,2093
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=128,L=100,0.435,4213
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=128,L=200,0.577,4418
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=32,nprobe=128,L=500,0.7355,4275
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=4,L=100,0.658,136
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=4,L=200,0.7555,214
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=4,L=500,0.853,250
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=8,L=100,0.5975,176
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=8,L=200,0.7355,219
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=8,L=500,0.865,358
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=12,L=100,0.539,280
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=12,L=200,0.6905,299
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=12,L=500,0.841,391
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=16,L=100,0.498,311
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=16,L=200,0.6575,341
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=16,L=500,0.825,445
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=20,L=100,0.4685,366
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=20,L=200,0.623,606
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=20,L=500,0.8,609
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=24,L=100,0.4395,475
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=24,L=200,0.588,467
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=24,L=500,0.7805,651
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=32,L=100,0.4065,561
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=32,L=200,0.549,579
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=32,L=500,0.749,695
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=64,L=100,0.332,1020
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=64,L=200,0.4605,1035
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=64,L=500,0.6495,1220
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=128,L=100,0.277,2346
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=128,L=200,0.3915,2348
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=128,m=8,nprobe=128,L=500,0.571,2438
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=4,L=100,0.7415,149
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=4,L=200,0.7965,154
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=4,L=500,0.8165,240
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=8,L=100,0.731,175
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=8,L=200,0.8375,205
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=8,L=500,0.8995,336
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=12,L=100,0.683,249
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=12,L=200,0.8195,251
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=12,L=500,0.9215,380
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=16,L=100,0.653,231
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=16,L=200,0.7925,314
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=16,L=500,0.9225,366
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=20,L=100,0.6185,281
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=20,L=200,0.769,303
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=20,L=500,0.9185,459
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=24,L=100,0.5915,318
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=24,L=200,0.745,371
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=24,L=500,0.905,482
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=32,L=100,0.551,390
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=32,L=200,0.702,430
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=32,L=500,0.879,552
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=64,L=100,0.454,654
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=64,L=200,0.6,732
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=64,L=500,0.799,861
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=128,L=100,0.3745,1284
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=128,L=200,0.5115,1300
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=16,nprobe=128,L=500,0.7045,1455
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=4,L=100,0.765,152
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=4,L=200,0.8045,171
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=4,L=500,0.816,295
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=8,L=100,0.772,214
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=8,L=200,0.8615,254
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=8,L=500,0.9075,350
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=12,L=100,0.735,284
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=12,L=200,0.857,306
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=12,L=500,0.9295,442
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=16,L=100,0.695,318
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=16,L=200,0.8395,380
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=16,L=500,0.933,501
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=20,L=100,0.6685,383
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=20,L=200,0.819,419
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=20,L=500,0.9305,539
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=24,L=100,0.6475,450
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=24,L=200,0.8005,470
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=24,L=500,0.9305,579
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=32,L=100,0.6005,539
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=32,L=200,0.762,583
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=32,L=500,0.912,719
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=64,L=100,0.499,967
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=64,L=200,0.6585,1017
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=64,L=500,0.849,1173
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=128,L=100,0.43,2383
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=128,L=200,0.5635,1970
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=32,nprobe=128,L=500,0.7685,2525
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=4,L=100,0.6705,85
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=4,L=200,0.7595,155
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=4,L=500,0.8085,267
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=8,L=100,0.635,150
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=8,L=200,0.761,205
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=8,L=500,0.878,275
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=12,L=100,0.59,155
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=12,L=200,0.732,179
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=12,L=500,0.876,289
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=16,L=100,0.5435,215
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=16,L=200,0.6895,238
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=16,L=500,0.856,362
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=20,L=100,0.518,224
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=20,L=200,0.6665,274
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=20,L=500,0.838,385
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=24,L=100,0.498,249
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=24,L=200,0.6415,299
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=24,L=500,0.821,432
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=32,L=100,0.45,309
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=32,L=200,0.5895,355
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=32,L=500,0.786,468
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=64,L=100,0.3535,557
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=64,L=200,0.4905,585
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=64,L=500,0.6785,714
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=128,L=100,0.2825,991
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=128,L=200,0.398,1031
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=256,m=8,nprobe=128,L=500,0.5825,1128
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=4,L=100,0.703,113
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=4,L=200,0.7405,148
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=4,L=500,0.748,237
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=8,L=100,0.745,151
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=8,L=200,0.8235,188
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=8,L=500,0.863,248
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=12,L=100,0.727,172
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=12,L=200,0.832,180
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=12,L=500,0.9,290
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=16,L=100,0.7085,194
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=16,L=200,0.8275,201
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=16,L=500,0.9175,328
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=20,L=100,0.6745,198
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=20,L=200,0.805,222
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=20,L=500,0.9165,343
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=24,L=100,0.644,232
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=24,L=200,0.787,255
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=24,L=500,0.9165,354
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=32,L=100,0.601,268
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=32,L=200,0.766,300
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=32,L=500,0.9075,401
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=64,L=100,0.488,414
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=64,L=200,0.6555,426
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=64,L=500,0.8455,591
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=128,L=100,0.3915,681
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=128,L=200,0.5345,722
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=16,nprobe=128,L=500,0.751,858
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=4,L=100,0.72,127
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=4,L=200,0.745,167
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=4,L=500,0.748,242
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=8,L=100,0.773,182
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=8,L=200,0.8435,216
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=8,L=500,0.8625,258
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=12,L=100,0.7585,220
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=12,L=200,0.856,244
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=12,L=500,0.906,349
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=16,L=100,0.7425,242
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=16,L=200,0.8545,268
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=16,L=500,0.9305,387
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=20,L=100,0.708,256
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=20,L=200,0.835,320
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=20,L=500,0.9315,378
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=24,L=100,0.683,296
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=24,L=200,0.8215,338
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=24,L=500,0.9365,426
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=32,L=100,0.646,339
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=32,L=200,0.793,367
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=32,L=500,0.932,504
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=64,L=100,0.5415,566
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=64,L=200,0.6945,580
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=64,L=500,0.8825,711
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=128,L=100,0.447,1067
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=128,L=200,0.5905,1105
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=32,nprobe=128,L=500,0.7915,1237
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=4,L=100,0.6665,101
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=4,L=200,0.729,150
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=4,L=500,0.7465,224
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=8,L=100,0.668,127
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=8,L=200,0.784,158
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=8,L=500,0.8555,234
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=12,L=100,0.63,142
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=12,L=200,0.775,163
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=12,L=500,0.8815,273
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=16,L=100,0.593,135
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=16,L=200,0.751,199
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=16,L=500,0.892,294
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=20,L=100,0.557,180
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=20,L=200,0.7165,198
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=20,L=500,0.877,293
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=24,L=100,0.53,181
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=24,L=200,0.686,219
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=24,L=500,0.8635,321
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=32,L=100,0.489,236
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=32,L=200,0.6485,250
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=32,L=500,0.84,348
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=64,L=100,0.3865,328
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=64,L=200,0.5325,426
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=64,L=500,0.742,501
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=128,L=100,0.2865,535
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=128,L=200,0.4135,659
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=512,m=8,nprobe=128,L=500,0.621,952
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=4,L=100,0.747,272
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=4,L=200,0.8395,290
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=4,L=500,0.8945,331
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=8,L=100,0.705,446
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=8,L=200,0.822,473
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=8,L=500,0.918,534
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=12,L=100,0.668,638
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=12,L=200,0.7915,693
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=12,L=500,0.9135,685
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=16,L=100,0.638,684
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=16,L=200,0.767,767
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=16,L=500,0.901,911
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=20,L=100,0.609,878
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=20,L=200,0.744,911
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=20,L=500,0.888,1012
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=24,L=100,0.5915,993
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=24,L=200,0.7245,1132
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=24,L=500,0.8765,1168
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=32,L=100,0.5655,1403
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=32,L=200,0.705,1468
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=32,L=500,0.862,1476
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=64,L=100,0.505,2751
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=64,L=200,0.6365,3231
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=16,nprobe=64,L=500,0.7955,2853
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=4,L=100,0.78,332
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=4,L=200,0.851,351
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=4,L=500,0.897,487
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=8,L=100,0.739,580
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=8,L=200,0.847,585
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=8,L=500,0.931,704
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=12,L=100,0.717,769
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=12,L=200,0.829,835
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=12,L=500,0.9335,985
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=16,L=100,0.694,1007
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=16,L=200,0.8125,1033
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=16,L=500,0.9245,1200
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=20,L=100,0.667,1354
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=20,L=200,0.7935,1439
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=20,L=500,0.9115,1559
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=24,L=100,0.645,2110
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=24,L=200,0.779,1967
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=24,L=500,0.902,2162
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=32,L=100,0.618,2533
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=32,L=200,0.7545,2548
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=32,L=500,0.8815,2533
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=64,L=100,0.552,4279
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=64,L=200,0.6925,4474
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=32,nprobe=64,L=500,0.8315,4648
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=4,L=100,0.654,182
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=4,L=200,0.769,235
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=4,L=500,0.862,357
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=8,L=100,0.5925,333
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=8,L=200,0.718,340
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=8,L=500,0.86,456
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=12,L=100,0.549,427
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=12,L=200,0.6875,472
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=12,L=500,0.836,586
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=16,L=100,0.525,546
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=16,L=200,0.653,557
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=16,L=500,0.813,680
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=20,L=100,0.499,638
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=20,L=200,0.627,682
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=20,L=500,0.7895,810
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=24,L=100,0.4805,803
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=24,L=200,0.6115,790
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=24,L=500,0.775,1049
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=32,L=100,0.4485,1009
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=32,L=200,0.587,1095
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=32,L=500,0.749,1163
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=64,L=100,0.3945,2115
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=64,L=200,0.523,2168
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(Serial)+Rerank,nlist=64,m=8,nprobe=64,L=500,0.6795,2494
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=4,L=100,0.7475,926
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=4,L=200,0.826,955
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=4,L=500,0.869,721
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=8,L=100,0.705,616
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=8,L=200,0.822,631
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=8,L=500,0.917,642
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=12,L=100,0.658,637
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=12,L=200,0.795,677
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=12,L=500,0.9165,695
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=16,L=100,0.6145,757
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=16,L=200,0.768,774
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=16,L=500,0.9065,828
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=20,L=100,0.5845,920
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=20,L=200,0.739,938
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=20,L=500,0.8905,892
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=24,L=100,0.5575,805
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=24,L=200,0.7155,869
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=24,L=500,0.8675,923
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=32,L=100,0.5255,1271
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=32,L=200,0.681,956
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=32,L=500,0.84,973
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=64,L=100,0.4455,1685
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=64,L=200,0.593,1476
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=64,L=500,0.7755,1561
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=128,L=100,0.3885,3542
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=128,L=200,0.5095,3754
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=16,nprobe=128,L=500,0.6965,3634
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=4,L=100,0.7735,915
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=4,L=200,0.8405,775
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=4,L=500,0.8705,908
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=8,L=100,0.757,979
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=8,L=200,0.852,707
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=8,L=500,0.926,816
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=12,L=100,0.7195,901
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=12,L=200,0.8395,765
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=12,L=500,0.9335,808
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=16,L=100,0.6775,770
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=16,L=200,0.8125,752
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=16,L=500,0.931,761
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=20,L=100,0.642,806
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=20,L=200,0.7935,827
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=20,L=500,0.9185,884
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=24,L=100,0.609,895
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=24,L=200,0.769,866
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=24,L=500,0.9095,982
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=32,L=100,0.578,1107
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=32,L=200,0.735,1011
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=32,L=500,0.8885,1025
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=64,L=100,0.5025,1999
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=64,L=200,0.6535,2207
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=64,L=500,0.8225,2709
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=128,L=100,0.435,4009
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=128,L=200,0.577,3696
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=32,nprobe=128,L=500,0.7355,3849
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=4,L=100,0.658,566
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=4,L=200,0.7555,598
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=4,L=500,0.853,646
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=8,L=100,0.5975,667
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=8,L=200,0.7355,591
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=8,L=500,0.865,634
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=12,L=100,0.539,759
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=12,L=200,0.6905,624
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=12,L=500,0.841,662
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=16,L=100,0.498,701
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=16,L=200,0.6575,769
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=16,L=500,0.825,716
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=20,L=100,0.4685,927
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=20,L=200,0.623,1026
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=20,L=500,0.8,946
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=24,L=100,0.4395,895
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=24,L=200,0.588,787
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=24,L=500,0.7805,907
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=32,L=100,0.4065,1053
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=32,L=200,0.549,1033
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=32,L=500,0.749,998
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=64,L=100,0.332,1348
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=64,L=200,0.4605,1719
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=64,L=500,0.6495,1376
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=128,L=100,0.277,2608
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=128,L=200,0.3915,2844
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=128,m=8,nprobe=128,L=500,0.571,2941
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=4,L=100,0.7415,786
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=4,L=200,0.7965,764
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=4,L=500,0.8165,638
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=8,L=100,0.731,587
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=8,L=200,0.8375,565
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=8,L=500,0.8995,584
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=12,L=100,0.683,623
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=12,L=200,0.8195,689
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=12,L=500,0.9215,626
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=16,L=100,0.653,563
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=16,L=200,0.7925,566
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=16,L=500,0.9225,619
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=20,L=100,0.6185,677
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=20,L=200,0.769,706
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=20,L=500,0.9185,829
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=24,L=100,0.5915,787
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=24,L=200,0.745,688
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=24,L=500,0.905,707
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=32,L=100,0.551,727
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=32,L=200,0.702,696
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=32,L=500,0.879,801
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=64,L=100,0.454,1099
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=64,L=200,0.6,942
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=64,L=500,0.799,924
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=128,L=100,0.3745,1329
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=128,L=200,0.5115,1368
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=16,nprobe=128,L=500,0.7045,1482
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=4,L=100,0.765,584
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=4,L=200,0.8045,618
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=4,L=500,0.816,764
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=8,L=100,0.772,748
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=8,L=200,0.8615,665
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=8,L=500,0.9075,679
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=12,L=100,0.735,631
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=12,L=200,0.857,635
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=12,L=500,0.9295,710
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=16,L=100,0.695,949
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=16,L=200,0.8395,780
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=16,L=500,0.933,718
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=20,L=100,0.6685,754
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=20,L=200,0.819,774
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=20,L=500,0.9305,1179
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=24,L=100,0.6475,790
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=24,L=200,0.8005,797
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=24,L=500,0.9305,795
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=32,L=100,0.6005,842
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=32,L=200,0.762,840
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=32,L=500,0.912,909
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=64,L=100,0.499,1075
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=64,L=200,0.6585,1104
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=64,L=500,0.849,1090
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=128,L=100,0.43,1562
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=128,L=200,0.5635,1564
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=32,nprobe=128,L=500,0.7685,1639
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=4,L=100,0.6705,568
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=4,L=200,0.7595,571
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=4,L=500,0.8085,636
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=8,L=100,0.635,612
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=8,L=200,0.761,618
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=8,L=500,0.878,625
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=12,L=100,0.59,630
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=12,L=200,0.732,709
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=12,L=500,0.876,690
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=16,L=100,0.5435,727
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=16,L=200,0.6895,768
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=16,L=500,0.856,718
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=20,L=100,0.518,751
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=20,L=200,0.6665,633
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=20,L=500,0.838,828
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=24,L=100,0.498,654
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=24,L=200,0.6415,725
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=24,L=500,0.821,703
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=32,L=100,0.45,968
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=32,L=200,0.5895,769
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=32,L=500,0.786,839
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=64,L=100,0.3535,980
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=64,L=200,0.4905,961
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=64,L=500,0.6785,1023
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=128,L=100,0.2825,1311
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=128,L=200,0.398,1315
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=256,m=8,nprobe=128,L=500,0.5825,1309
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=4,L=100,0.703,564
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=4,L=200,0.7405,611
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=4,L=500,0.748,747
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=8,L=100,0.745,608
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=8,L=200,0.8235,649
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=8,L=500,0.863,633
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=12,L=100,0.727,764
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=12,L=200,0.832,648
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=12,L=500,0.9,623
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=16,L=100,0.7085,651
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=16,L=200,0.8275,682
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=16,L=500,0.9175,910
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=20,L=100,0.6745,625
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=20,L=200,0.805,803
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=20,L=500,0.9165,910
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=24,L=100,0.644,634
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=24,L=200,0.787,657
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=24,L=500,0.9165,702
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=32,L=100,0.601,876
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=32,L=200,0.766,656
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=32,L=500,0.9075,736
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=64,L=100,0.488,790
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=64,L=200,0.6555,744
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=64,L=500,0.8455,749
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=128,L=100,0.3915,958
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=128,L=200,0.5345,982
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=16,nprobe=128,L=500,0.751,1273
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=4,L=100,0.72,574
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=4,L=200,0.745,564
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=4,L=500,0.748,657
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=8,L=100,0.773,563
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=8,L=200,0.8435,1163
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=8,L=500,0.8625,686
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=12,L=100,0.7585,637
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=12,L=200,0.856,619
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=12,L=500,0.906,601
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=16,L=100,0.7425,642
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=16,L=200,0.8545,612
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=16,L=500,0.9305,636
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=20,L=100,0.708,623
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=20,L=200,0.835,781
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=20,L=500,0.9315,749
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=24,L=100,0.683,631
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=24,L=200,0.8215,643
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=24,L=500,0.9365,913
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=32,L=100,0.646,835
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=32,L=200,0.793,696
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=32,L=500,0.932,808
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=64,L=100,0.5415,901
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=64,L=200,0.6945,784
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=64,L=500,0.8825,812
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=128,L=100,0.447,1012
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=128,L=200,0.5905,1098
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=32,nprobe=128,L=500,0.7915,1044
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=4,L=100,0.6665,527
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=4,L=200,0.729,590
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=4,L=500,0.7465,584
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=8,L=100,0.668,969
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=8,L=200,0.784,831
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=8,L=500,0.8555,712
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=12,L=100,0.63,674
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=12,L=200,0.775,651
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=12,L=500,0.8815,707
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=16,L=100,0.593,607
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=16,L=200,0.751,589
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=16,L=500,0.892,695
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=20,L=100,0.557,843
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=20,L=200,0.7165,629
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=20,L=500,0.877,650
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=24,L=100,0.53,620
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=24,L=200,0.686,657
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=24,L=500,0.8635,771
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=32,L=100,0.489,664
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=32,L=200,0.6485,722
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=32,L=500,0.84,840
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=64,L=100,0.3865,744
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=64,L=200,0.5325,740
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=64,L=500,0.742,816
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=128,L=100,0.2865,1123
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=128,L=200,0.4135,953
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=512,m=8,nprobe=128,L=500,0.621,961
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=4,L=100,0.747,631
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=4,L=200,0.8395,631
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=4,L=500,0.8945,825
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=8,L=100,0.705,899
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=8,L=200,0.822,811
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=8,L=500,0.918,861
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=12,L=100,0.668,905
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=12,L=200,0.7915,942
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=12,L=500,0.9135,1167
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=16,L=100,0.638,1019
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=16,L=200,0.767,1001
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=16,L=500,0.901,1010
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=20,L=100,0.609,1002
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=20,L=200,0.744,1084
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=20,L=500,0.888,1034
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=24,L=100,0.5915,1138
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=24,L=200,0.7245,1167
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=24,L=500,0.8765,1198
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=32,L=100,0.5655,1370
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=32,L=200,0.705,1418
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=32,L=500,0.862,1433
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=64,L=100,0.505,2440
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=64,L=200,0.6365,2727
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=16,nprobe=64,L=500,0.7955,2753
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=4,L=100,0.78,795
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=4,L=200,0.851,713
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=4,L=500,0.897,743
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=8,L=100,0.739,919
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=8,L=200,0.847,998
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=8,L=500,0.931,944
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=12,L=100,0.717,1142
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=12,L=200,0.829,1121
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=12,L=500,0.9335,975
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=16,L=100,0.694,1066
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=16,L=200,0.8125,1053
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=16,L=500,0.9245,1120
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=20,L=100,0.667,1184
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=20,L=200,0.7935,1183
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=20,L=500,0.9115,1149
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=24,L=100,0.645,1284
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=24,L=200,0.779,1326
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=24,L=500,0.902,1371
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=32,L=100,0.618,1574
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=32,L=200,0.7545,1742
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=32,L=500,0.8815,1786
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=64,L=100,0.552,3591
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=64,L=200,0.6925,3718
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=32,nprobe=64,L=500,0.8315,3447
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=4,L=100,0.654,643
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=4,L=200,0.769,620
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=4,L=500,0.862,1020
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=8,L=100,0.5925,863
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=8,L=200,0.718,885
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=8,L=500,0.86,808
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=12,L=100,0.549,813
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=12,L=200,0.6875,814
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=12,L=500,0.836,949
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=16,L=100,0.525,1117
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=16,L=200,0.653,1121
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=16,L=500,0.813,996
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=20,L=100,0.499,1009
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=20,L=200,0.627,1007
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=20,L=500,0.7895,1032
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=24,L=100,0.4805,1097
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=24,L=200,0.6115,1241
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=24,L=500,0.775,1298
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=32,L=100,0.4485,1340
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=32,L=200,0.587,1333
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=32,L=500,0.749,1324
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=64,L=100,0.3945,2425
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=64,L=200,0.523,2705
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(OpenMP)+Rerank,nlist=64,m=8,nprobe=64,L=500,0.6795,2504
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=4,L=100,0.7475,3848
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=4,L=200,0.826,3581
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=4,L=500,0.869,3820
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=8,L=100,0.705,3711
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=8,L=200,0.822,3911
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=8,L=500,0.917,4052
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=12,L=100,0.658,3941
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=12,L=200,0.795,4128
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=12,L=500,0.9165,4172
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=16,L=100,0.6145,4138
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=16,L=200,0.768,4281
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=16,L=500,0.9065,4621
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=20,L=100,0.5845,4505
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=20,L=200,0.739,4252
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=20,L=500,0.8905,4450
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=24,L=100,0.5575,4280
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=24,L=200,0.7155,4205
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=24,L=500,0.8675,4113
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=32,L=100,0.5255,3838
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=32,L=200,0.681,3964
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=32,L=500,0.84,4135
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=64,L=100,0.4455,4218
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=64,L=200,0.593,4484
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=64,L=500,0.7755,4687
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=128,L=100,0.3885,5274
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=128,L=200,0.5095,5362
+加载IVFPQ索引: nlist=128, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=16,nprobe=128,L=500,0.6965,5450
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=4,L=100,0.7735,3647
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=4,L=200,0.8405,3549
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=4,L=500,0.8705,3585
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=8,L=100,0.757,3615
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=8,L=200,0.852,3762
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=8,L=500,0.926,3624
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=12,L=100,0.7195,3715
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=12,L=200,0.8395,3803
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=12,L=500,0.9335,4043
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=16,L=100,0.6775,3709
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=16,L=200,0.8125,3844
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=16,L=500,0.931,3876
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=20,L=100,0.642,3819
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=20,L=200,0.7935,3849
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=20,L=500,0.9185,3745
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=24,L=100,0.609,4157
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=24,L=200,0.769,4115
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=24,L=500,0.9095,4168
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=32,L=100,0.578,4229
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=32,L=200,0.735,4216
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=32,L=500,0.8885,4231
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=64,L=100,0.5025,4355
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=64,L=200,0.6535,4933
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=64,L=500,0.8225,4560
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=128,L=100,0.435,5778
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=128,L=200,0.577,5584
+加载IVFPQ索引: nlist=128, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=32,nprobe=128,L=500,0.7355,5375
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=4,L=100,0.658,3338
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=4,L=200,0.7555,3658
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=4,L=500,0.853,3513
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=8,L=100,0.5975,3366
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=8,L=200,0.7355,3418
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=8,L=500,0.865,3807
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=12,L=100,0.539,3364
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=12,L=200,0.6905,3336
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=12,L=500,0.841,3880
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=16,L=100,0.498,3675
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=16,L=200,0.6575,4196
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=16,L=500,0.825,3691
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=20,L=100,0.4685,3637
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=20,L=200,0.623,3794
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=20,L=500,0.8,4145
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=24,L=100,0.4395,4109
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=24,L=200,0.588,3927
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=24,L=500,0.7805,3814
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=32,L=100,0.4065,3988
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=32,L=200,0.549,3631
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=32,L=500,0.749,3512
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=64,L=100,0.332,4635
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=64,L=200,0.4605,4367
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=64,L=500,0.6495,4371
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=128,L=100,0.277,5794
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=128,L=200,0.3915,5575
+加载IVFPQ索引: nlist=128, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=128,m=8,nprobe=128,L=500,0.571,5601
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=4,L=100,0.7415,3557
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=4,L=200,0.7965,3383
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=4,L=500,0.8165,3321
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=8,L=100,0.731,3631
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=8,L=200,0.8375,3823
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=8,L=500,0.8995,3631
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=12,L=100,0.683,3906
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=12,L=200,0.8195,4082
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=12,L=500,0.9215,3895
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=16,L=100,0.653,3869
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=16,L=200,0.7925,3380
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=16,L=500,0.9225,3678
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=20,L=100,0.6185,4372
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=20,L=200,0.769,3681
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=20,L=500,0.9185,3958
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=24,L=100,0.5915,4008
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=24,L=200,0.745,4309
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=24,L=500,0.905,3783
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=32,L=100,0.551,3924
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=32,L=200,0.702,3931
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=32,L=500,0.879,3799
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=64,L=100,0.454,4643
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=64,L=200,0.6,4751
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=64,L=500,0.799,4829
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=128,L=100,0.3745,4722
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=128,L=200,0.5115,4370
+加载IVFPQ索引: nlist=256, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=16,nprobe=128,L=500,0.7045,4832
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=4,L=100,0.765,3773
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=4,L=200,0.8045,3935
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=4,L=500,0.816,3721
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=8,L=100,0.772,3873
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=8,L=200,0.8615,3791
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=8,L=500,0.9075,3833
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=12,L=100,0.735,4165
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=12,L=200,0.857,3882
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=12,L=500,0.9295,3833
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=16,L=100,0.695,3814
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=16,L=200,0.8395,3899
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=16,L=500,0.933,3735
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=20,L=100,0.6685,3709
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=20,L=200,0.819,3648
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=20,L=500,0.9305,3814
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=24,L=100,0.6475,3882
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=24,L=200,0.8005,3449
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=24,L=500,0.9305,3953
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=32,L=100,0.6005,4185
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=32,L=200,0.762,3666
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=32,L=500,0.912,3891
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=64,L=100,0.499,4188
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=64,L=200,0.6585,4208
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=64,L=500,0.849,4493
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=128,L=100,0.43,5331
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=128,L=200,0.5635,4730
+加载IVFPQ索引: nlist=256, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=32,nprobe=128,L=500,0.7685,4647
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=4,L=100,0.6705,3611
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=4,L=200,0.7595,3988
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=4,L=500,0.8085,3798
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=8,L=100,0.635,3765
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=8,L=200,0.761,3590
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=8,L=500,0.878,3582
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=12,L=100,0.59,3658
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=12,L=200,0.732,3554
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=12,L=500,0.876,4096
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=16,L=100,0.5435,4000
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=16,L=200,0.6895,3873
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=16,L=500,0.856,4019
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=20,L=100,0.518,3919
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=20,L=200,0.6665,4284
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=20,L=500,0.838,3716
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=24,L=100,0.498,4148
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=24,L=200,0.6415,3914
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=24,L=500,0.821,3638
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=32,L=100,0.45,3929
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=32,L=200,0.5895,3711
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=32,L=500,0.786,3828
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=64,L=100,0.3535,4316
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=64,L=200,0.4905,4561
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=64,L=500,0.6785,4621
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=128,L=100,0.2825,4493
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=128,L=200,0.398,4905
+加载IVFPQ索引: nlist=256, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=256,m=8,nprobe=128,L=500,0.5825,4552
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=4,L=100,0.703,3613
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=4,L=200,0.7405,3986
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=4,L=500,0.748,3621
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=8,L=100,0.745,3549
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=8,L=200,0.8235,3682
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=8,L=500,0.863,3831
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=12,L=100,0.727,3854
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=12,L=200,0.832,3580
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=12,L=500,0.9,3687
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=16,L=100,0.7085,4386
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=16,L=200,0.8275,3713
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=16,L=500,0.9175,3804
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=20,L=100,0.6745,3480
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=20,L=200,0.805,3669
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=20,L=500,0.9165,4024
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=24,L=100,0.644,3702
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=24,L=200,0.787,3533
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=24,L=500,0.9165,3981
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=32,L=100,0.601,3936
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=32,L=200,0.766,3809
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=32,L=500,0.9075,3686
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=64,L=100,0.488,4020
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=64,L=200,0.6555,4071
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=64,L=500,0.8455,4047
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=128,L=100,0.3915,4154
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=128,L=200,0.5345,4116
+加载IVFPQ索引: nlist=512, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=16,nprobe=128,L=500,0.751,3991
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=4,L=100,0.72,3719
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=4,L=200,0.745,3658
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=4,L=500,0.748,4446
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=8,L=100,0.773,4042
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=8,L=200,0.8435,3854
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=8,L=500,0.8625,3848
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=12,L=100,0.7585,3994
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=12,L=200,0.856,3831
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=12,L=500,0.906,3887
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=16,L=100,0.7425,3757
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=16,L=200,0.8545,4082
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=16,L=500,0.9305,3966
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=20,L=100,0.708,4155
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=20,L=200,0.835,3941
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=20,L=500,0.9315,3994
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=24,L=100,0.683,3989
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=24,L=200,0.8215,4022
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=24,L=500,0.9365,3909
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=32,L=100,0.646,4253
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=32,L=200,0.793,4143
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=32,L=500,0.932,3950
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=64,L=100,0.5415,4237
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=64,L=200,0.6945,4024
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=64,L=500,0.8825,4009
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=128,L=100,0.447,4142
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=128,L=200,0.5905,4329
+加载IVFPQ索引: nlist=512, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=32,nprobe=128,L=500,0.7915,4559
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=4,L=100,0.6665,3613
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=4,L=200,0.729,3889
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=4,L=500,0.7465,3839
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=8,L=100,0.668,3763
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=8,L=200,0.784,3795
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=8,L=500,0.8555,4175
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=12,L=100,0.63,4346
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=12,L=200,0.775,3845
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=12,L=500,0.8815,3724
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=16,L=100,0.593,4080
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=16,L=200,0.751,4051
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=16,L=500,0.892,3982
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=20,L=100,0.557,3947
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=20,L=200,0.7165,3707
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=20,L=500,0.877,3776
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=24,L=100,0.53,3933
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=24,L=200,0.686,4063
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=24,L=500,0.8635,4012
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=32,L=100,0.489,3812
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=32,L=200,0.6485,4216
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=32,L=500,0.84,3948
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=64,L=100,0.3865,3943
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=64,L=200,0.5325,3898
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=64,L=500,0.742,4101
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=128,L=100,0.2865,4294
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=128,L=200,0.4135,4289
+加载IVFPQ索引: nlist=512, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=512,m=8,nprobe=128,L=500,0.621,4475
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=4,L=100,0.747,4105
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=4,L=200,0.8395,3935
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=4,L=500,0.8945,3720
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=8,L=100,0.705,4359
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=8,L=200,0.822,3803
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=8,L=500,0.918,3788
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=12,L=100,0.668,4065
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=12,L=200,0.7915,4356
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=12,L=500,0.9135,3995
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=16,L=100,0.638,4773
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=16,L=200,0.767,4109
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=16,L=500,0.901,4566
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=20,L=100,0.609,4309
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=20,L=200,0.744,3892
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=20,L=500,0.888,3988
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=24,L=100,0.5915,4381
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=24,L=200,0.7245,4632
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=24,L=500,0.8765,4236
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=32,L=100,0.5655,4381
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=32,L=200,0.705,4619
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=32,L=500,0.862,4730
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=64,L=100,0.505,5193
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=64,L=200,0.6365,5106
+加载IVFPQ索引: nlist=64, d=96, m=16, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=16,nprobe=64,L=500,0.7955,5261
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=4,L=100,0.78,3698
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=4,L=200,0.851,3662
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=4,L=500,0.897,3957
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=8,L=100,0.739,3940
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=8,L=200,0.847,3941
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=8,L=500,0.931,4106
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=12,L=100,0.717,4029
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=12,L=200,0.829,4291
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=12,L=500,0.9335,4270
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=16,L=100,0.694,4406
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=16,L=200,0.8125,4723
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=16,L=500,0.9245,4472
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=20,L=100,0.667,4297
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=20,L=200,0.7935,4294
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=20,L=500,0.9115,4554
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=24,L=100,0.645,4306
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=24,L=200,0.779,4514
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=24,L=500,0.902,4494
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=32,L=100,0.618,4466
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=32,L=200,0.7545,4409
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=32,L=500,0.8815,5041
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=64,L=100,0.552,5584
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=64,L=200,0.6925,5369
+加载IVFPQ索引: nlist=64, d=96, m=32, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=32,nprobe=64,L=500,0.8315,5503
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=4,L=100,0.654,3749
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=4,L=200,0.769,4094
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=4,L=500,0.862,3847
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=8,L=100,0.5925,4021
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=8,L=200,0.718,3828
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=8,L=500,0.86,4351
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=12,L=100,0.549,4676
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=12,L=200,0.6875,4179
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=12,L=500,0.836,4553
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=16,L=100,0.525,4410
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=16,L=200,0.653,4425
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=16,L=500,0.813,4748
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=20,L=100,0.499,4227
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=20,L=200,0.627,4645
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=20,L=500,0.7895,4296
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=24,L=100,0.4805,4309
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=24,L=200,0.6115,4090
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=24,L=500,0.775,4067
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=32,L=100,0.4485,4324
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=32,L=200,0.587,4767
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=32,L=500,0.749,4496
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=64,L=100,0.3945,5218
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=64,L=200,0.523,5356
+加载IVFPQ索引: nlist=64, d=96, m=8, ksub=256
+IVF-PQ(pthread)+Rerank,nlist=64,m=8,nprobe=64,L=500,0.6795,5750

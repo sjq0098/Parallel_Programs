@@ -8,6 +8,7 @@
 #include <assert.h>
 #include <unordered_set>
 #include <list>
+#include <omp.h>
 #include <memory>
 
 namespace hnswlib {
@@ -70,6 +71,7 @@ class HierarchicalNSW : public AlgorithmInterface<dist_t> {
     std::mutex deleted_elements_lock;  // lock for deleted_elements
     std::unordered_set<tableint> deleted_elements;  // contains internal ids of deleted elements
 
+    
 
     HierarchicalNSW(SpaceInterface<dist_t> *s) {
     }
@@ -1408,5 +1410,241 @@ class HierarchicalNSW : public AlgorithmInterface<dist_t> {
         }
         std::cout << "integrity ok, checked " << connections_checked << " connections\n";
     }
+
+    // 并行搜索
+    // 并行搜索
+    // 并行搜索
+    // 并行搜索
+    // 并行搜索
+
+    template <bool bare_bone_search = true, bool collect_metrics = false>
+    std::priority_queue<
+    std::pair<dist_t, tableint>,
+    std::vector<std::pair<dist_t, tableint>>,
+    CompareByFirst>
+    searchBaseLayerST_omp(
+    tableint ep_id,
+    const void *data_point,
+    size_t ef,
+    BaseFilterFunctor* isIdAllowed=nullptr,
+    BaseSearchStopCondition<dist_t>* stop_condition=nullptr)  const
+{
+    // 1) 初始化
+    VisitedList *vl               = visited_list_pool_->getFreeVisitedList();
+    vl_type *visited_array        = vl->mass;
+    vl_type  visited_array_tag    = vl->curV;
+
+    std::priority_queue<std::pair<dist_t, tableint>, 
+                        std::vector<std::pair<dist_t, tableint>>, 
+                        CompareByFirst> top_candidates;
+    std::priority_queue<std::pair<dist_t, tableint>, 
+                        std::vector<std::pair<dist_t, tableint>>, 
+                        CompareByFirst> candidate_set;
+
+    dist_t lowerBound;
+    // 2) 处理 entry point
+    if (bare_bone_search ||
+        (!isMarkedDeleted(ep_id) &&
+         (!isIdAllowed || (*isIdAllowed)(getExternalLabel(ep_id))))) {
+        char* ep_data = getDataByInternalId(ep_id);
+        dist_t dist  = fstdistfunc_(data_point, ep_data, dist_func_param_);
+        lowerBound   = dist;
+        top_candidates.emplace(dist, ep_id);
+        if (!bare_bone_search && stop_condition) {
+            stop_condition->add_point_to_result(getExternalLabel(ep_id), ep_data, dist);
+        }
+        candidate_set.emplace(-dist, ep_id);
+    } else {
+        lowerBound = std::numeric_limits<dist_t>::max();
+        candidate_set.emplace(-lowerBound, ep_id);
+    }
+    visited_array[ep_id] = visited_array_tag;
+
+    // 3) 主循环
+    while (!candidate_set.empty()) {
+        auto current = candidate_set.top(); 
+        candidate_set.pop();
+        dist_t candidate_dist = -current.first;
+        tableint current_node_id = current.second;
+
+        // 判断是否停止
+        bool stop_flag = bare_bone_search
+            ? (candidate_dist > lowerBound)
+            : ( stop_condition
+                ? stop_condition->should_stop_search(candidate_dist, lowerBound)
+                : (candidate_dist > lowerBound && top_candidates.size() == ef)
+              );
+        if (stop_flag) break;
+
+        // 拿到 neighbor list
+        int *data = (int*)get_linklist0(current_node_id);
+        size_t size = getListCount((linklistsizeint*)data);
+        if (collect_metrics) {
+            metric_hops++;
+            metric_distance_computations += size;
+        }
+
+        // 串行阈值
+        if (size <256) {
+            for (size_t j = 1; j <= size; ++j) {
+                int cand_id = data[j];
+                if (visited_array[cand_id] != visited_array_tag) {
+                    visited_array[cand_id] = visited_array_tag;
+                    char* obj = getDataByInternalId(cand_id);
+                    dist_t d = fstdistfunc_(data_point, obj, dist_func_param_);
+                    bool consider = (!bare_bone_search && stop_condition)
+                        ? stop_condition->should_consider_candidate(d, lowerBound)
+                        : (top_candidates.size() < ef || d < lowerBound);
+                    if (!consider) continue;
+                    candidate_set.emplace(-d, cand_id);
+                    if (bare_bone_search ||
+                        (!isMarkedDeleted(cand_id) &&
+                         (!isIdAllowed || (*isIdAllowed)(getExternalLabel(cand_id))))) {
+                        top_candidates.emplace(d, cand_id);
+                        if (!bare_bone_search && stop_condition) {
+                            stop_condition->add_point_to_result(
+                                getExternalLabel(cand_id), obj, d
+                            );
+                        }
+                    }
+                    // 弹掉多余
+                    while ((!bare_bone_search && stop_condition
+                             ? stop_condition->should_remove_extra()
+                             : top_candidates.size() > ef)) {
+                        auto pr = top_candidates.top();
+                        top_candidates.pop();
+                        if (!bare_bone_search && stop_condition) {
+                            stop_condition->remove_point_from_result(
+                                getExternalLabel(pr.second),
+                                getDataByInternalId(pr.second),
+                                pr.first
+                            );
+                        }
+                    }
+                    if (!top_candidates.empty())
+                        lowerBound = top_candidates.top().first;
+                }
+            }
+        } 
+        else {
+            // 并行部分
+            int nthreads = omp_get_max_threads();
+            std::vector<std::vector<std::pair<dist_t,tableint>>> local_cands(nthreads);
+            std::vector<std::vector<std::pair<dist_t,tableint>>> local_tops(nthreads);
+
+            #pragma omp parallel
+            {
+                int tid = omp_get_thread_num();
+                auto &lc = local_cands[tid];
+                auto &lt = local_tops[tid];
+
+                #pragma omp for schedule(static)
+                for (int j = 1; j <= (int)size; ++j) {
+                    int cand_id = data[j];
+                    // 原子标记
+                    if (__sync_bool_compare_and_swap(
+                            &visited_array[cand_id],
+                            visited_array_tag - 1,
+                            visited_array_tag)) 
+                    {
+                        char* obj = getDataByInternalId(cand_id);
+                        dist_t d = fstdistfunc_(data_point, obj, dist_func_param_);
+
+                        bool consider = (!bare_bone_search && stop_condition)
+                            ? stop_condition->should_consider_candidate(d, lowerBound)
+                            : (top_candidates.size() < ef || d < lowerBound);
+                        if (!consider) continue;
+
+                        lc.emplace_back(d, cand_id);
+
+                        if (bare_bone_search ||
+                            (!isMarkedDeleted(cand_id) &&
+                             (!isIdAllowed || (*isIdAllowed)(getExternalLabel(cand_id))))) {
+                            lt.emplace_back(d, cand_id);
+                        }
+                    }
+                }
+            } // end parallel
+
+            // 合并线程结果
+            for (int t = 0; t < nthreads; ++t) {
+                for (auto &p : local_cands[t]) {
+                    candidate_set.emplace(-p.first, p.second);
+                }
+                for (auto &p : local_tops[t]) {
+                    top_candidates.emplace(p.first, p.second);
+                    if (top_candidates.size() > ef)
+                        top_candidates.pop();
+                }
+            }
+            if (!top_candidates.empty())
+                lowerBound = top_candidates.top().first;
+        }
+    }
+
+    // 4) 清理并返回
+    visited_list_pool_->releaseVisitedList(vl);
+    return top_candidates;
+}
+
+
+    std::priority_queue<std::pair<dist_t, labeltype >>
+    searchKnn_omp(const void *query_data, size_t k, BaseFilterFunctor* isIdAllowed = nullptr) const {
+        std::priority_queue<std::pair<dist_t, labeltype >> result;
+        if (cur_element_count == 0) return result;
+
+        tableint currObj = enterpoint_node_;
+        dist_t curdist = fstdistfunc_(query_data, getDataByInternalId(enterpoint_node_), dist_func_param_);
+
+        for (int level = maxlevel_; level > 0; level--) {
+            bool changed = true;
+            while (changed) {
+                changed = false;
+                unsigned int *data;
+
+                data = (unsigned int *) get_linklist(currObj, level);
+                int size = getListCount(data);
+                metric_hops++;
+                metric_distance_computations+=size;
+
+                tableint *datal = (tableint *) (data + 1);
+                for (int i = 0; i < size; i++) {
+                    tableint cand = datal[i];
+                    if (cand < 0 || cand > max_elements_)
+                        throw std::runtime_error("cand error");
+                    dist_t d = fstdistfunc_(query_data, getDataByInternalId(cand), dist_func_param_);
+
+                    if (d < curdist) {
+                        curdist = d;
+                        currObj = cand;
+                        changed = true;
+                    }
+                }
+            }
+        }
+
+        std::priority_queue<std::pair<dist_t, tableint>, std::vector<std::pair<dist_t, tableint>>, CompareByFirst> top_candidates;
+        bool bare_bone_search = !num_deleted_ && !isIdAllowed;
+        if (bare_bone_search) {
+            top_candidates = searchBaseLayerST_omp<true>(
+                    currObj, query_data, std::max(ef_, k), isIdAllowed);
+        } else {
+            top_candidates = searchBaseLayerST_omp<false>(
+                    currObj, query_data, std::max(ef_, k), isIdAllowed);
+        }
+
+        while (top_candidates.size() > k) {
+            top_candidates.pop();
+        }
+        while (top_candidates.size() > 0) {
+            std::pair<dist_t, tableint> rez = top_candidates.top();
+            result.push(std::pair<dist_t, labeltype>(rez.first, getExternalLabel(rez.second)));
+            top_candidates.pop();
+        }
+        return result;
+    }
+
+
+   
 };
 }  // namespace hnswlib

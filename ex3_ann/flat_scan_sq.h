@@ -1,8 +1,8 @@
 #pragma once
-#include <arm_neon.h>
+#include <immintrin.h>  // 包含x86 SIMD指令集
 #include <queue>
 #include <cassert>
-#include "flat_scan_neon.h"
+#include "flat_scan_simd.h"
 
 // SQ量化数据结构
 struct SQData {
@@ -16,32 +16,32 @@ struct SQData {
                                  num_vectors(n), dim(d) {}
 };
 
-// 使用NEON优化的量化函数
-inline SQData quantize_base_neon(const float* base, size_t n, size_t d) {
+// 使用SSE优化的量化函数
+inline SQData quantize_base_sse(const float* base, size_t n, size_t d) {
     SQData sq(n, d);
     
     // 分块处理以提高缓存效率
     constexpr size_t BLOCK_SIZE = 32;
     
     for(size_t dim = 0; dim < d; dim += 4) {
-        // 使用NEON加速查找最大最小值
-        float32x4_t vmin = vld1q_f32(base + dim);
-        float32x4_t vmax = vmin;
+        // 使用SSE加速查找最大最小值
+        __m128 vmin = _mm_loadu_ps(base + dim);
+        __m128 vmax = vmin;
         
         // 分块计算最大最小值
         for(size_t i = 0; i < n; i += BLOCK_SIZE) {
             size_t block_end = std::min(i + BLOCK_SIZE, n);
             for(size_t j = i; j < block_end; j++) {
-                float32x4_t vcur = vld1q_f32(base + j*d + dim);
-                vmin = vminq_f32(vmin, vcur);
-                vmax = vmaxq_f32(vmax, vcur);
+                __m128 vcur = _mm_loadu_ps(base + j*d + dim);
+                vmin = _mm_min_ps(vmin, vcur);
+                vmax = _mm_max_ps(vmax, vcur);
             }
         }
         
         // 存储最小值和范围
         float min_vals[4], max_vals[4];
-        vst1q_f32(min_vals, vmin);
-        vst1q_f32(max_vals, vmax);
+        _mm_storeu_ps(min_vals, vmin);
+        _mm_storeu_ps(max_vals, vmax);
         
         for(int j = 0; j < 4 && dim + j < d; j++) {
             sq.min_vals[dim + j] = min_vals[j];
@@ -65,33 +65,40 @@ inline SQData quantize_base_neon(const float* base, size_t n, size_t d) {
     return sq;
 }
 
-// NEON优化的量化内积计算
-inline float dot_product_sq_neon(const uint8_t* codes, const float* mins,
+// SSE优化的量化内积计算
+inline float dot_product_sq_sse(const uint8_t* codes, const float* mins,
                                const float* scales, const float* query,
                                size_t idx, size_t dim) {
-    float32x4_t sum = vdupq_n_f32(0);
+    __m128 sum = _mm_setzero_ps();
     const uint8_t* code_ptr = codes + idx * dim;
     
     for(size_t d = 0; d < dim; d += 4) {
-        uint8x8_t vcodes = vld1_u8(code_ptr + d);
-        uint16x8_t vcodes_u16 = vmovl_u8(vcodes);
-        uint32x4_t vcodes_u32 = vmovl_u16(vget_low_u16(vcodes_u16));
+        // 加载4个uint8值并转换为4个float
+        __m128i vcodes_i = _mm_setr_epi32(
+            code_ptr[d], code_ptr[d+1], 
+            code_ptr[d+2], code_ptr[d+3]
+        );
+        __m128i vcodes_u32 = _mm_and_si128(vcodes_i, _mm_set1_epi32(0xFF));
+        __m128 vf = _mm_cvtepi32_ps(vcodes_u32);
         
-        float32x4_t vf = vcvtq_f32_u32(vcodes_u32);
-        float32x4_t vmins = vld1q_f32(mins + d);
-        float32x4_t vscales = vld1q_f32(scales + d);
-        float32x4_t vdecode = vmlaq_f32(vmins, vf, vscales);
-        float32x4_t vquery = vld1q_f32(query + d);
-        sum = vmlaq_f32(sum, vdecode, vquery);
+        __m128 vmins = _mm_loadu_ps(mins + d);
+        __m128 vscales = _mm_loadu_ps(scales + d);
+        __m128 vdecode = _mm_add_ps(vmins, _mm_mul_ps(vf, vscales));
+        __m128 vquery = _mm_loadu_ps(query + d);
+        sum = _mm_add_ps(sum, _mm_mul_ps(vdecode, vquery));
     }
     
-    float32x2_t r = vadd_f32(vget_high_f32(sum), vget_low_f32(sum));
-    return vget_lane_f32(vpadd_f32(r, r), 0);
+    // 水平求和
+    __m128 shuf = _mm_shuffle_ps(sum, sum, _MM_SHUFFLE(2, 3, 0, 1));
+    __m128 sums = _mm_add_ps(sum, shuf);
+    shuf = _mm_movehl_ps(shuf, sums);
+    sums = _mm_add_ss(sums, shuf);
+    return _mm_cvtss_f32(sums);
 }
 
 // SQ优化的暴力搜索
 inline std::priority_queue<std::pair<float, uint32_t>> 
-flat_search_sq_neon(const uint8_t* quantized_base, const float* min_vals,
+flat_search_sq_sse(const uint8_t* quantized_base, const float* min_vals,
                     const float* scales, const float* query,
                     size_t base_number, size_t vecdim, size_t k) {
     std::priority_queue<std::pair<float, uint32_t>> q;
@@ -103,7 +110,7 @@ flat_search_sq_neon(const uint8_t* quantized_base, const float* min_vals,
         size_t block_end = std::min(i + BLOCK_SIZE, base_number);
         
         for(size_t j = i; j < block_end; j++) {
-            float dis = dot_product_sq_neon(quantized_base, min_vals, scales,
+            float dis = dot_product_sq_sse(quantized_base, min_vals, scales,
                                           query, j, vecdim);
             dis = 1.0f - dis;
             

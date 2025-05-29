@@ -9,6 +9,7 @@
 #include <stdexcept>
 #include <iostream>
 #include <utility>  // 添加utility头文件以支持std::pair
+#include "simd.h"
 #include <limits>   // 添加limits头文件以支持std::numeric_limits
 
 // IVF PQ索引结构体定义
@@ -137,11 +138,7 @@ for (size_t m = 0; m < index->m; ++m) {
     const float* query_sub = query + m * index->dsub;
     for (size_t k = 0; k < index->ksub; ++k) {
         const float* cb = index->pq_codebooks.data() + (m*index->ksub + k)*index->dsub;
-        float dist2 = 0;
-        for (size_t d = 0; d < index->dsub; ++d) {
-            float diff = query_sub[d] - cb[d];
-            dist2 += diff * diff;
-        }
+        float dist2 = l2_dist_avx2(query_sub, cb, index->dsub);
         distance_table[m*index->ksub + k] = dist2;
     }
 }
@@ -163,11 +160,7 @@ std::priority_queue<std::pair<float, uint32_t>> ivfpq_search(
     
     for (size_t i = 0; i < index->nlist; ++i) {
         const float* cptr = index->centroids.data() + i * index->d;
-        float dist2 = 0;
-        for (size_t d = 0; d < index->d; ++d) {
-            float diff = query[d] - cptr[d];
-            dist2 += diff * diff;
-        }
+        float dist2 = l2_dist_avx2(query, cptr, index->d);
         cd[i].dist2 = dist2;
         cd[i].idx   = uint32_t(i);
     }

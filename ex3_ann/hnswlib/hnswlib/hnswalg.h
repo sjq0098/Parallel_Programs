@@ -1417,38 +1417,38 @@ class HierarchicalNSW : public AlgorithmInterface<dist_t> {
     // 并行搜索
     // 并行搜索
 
-    template <bool bare_bone_search = true, bool collect_metrics = false>
-    std::priority_queue<
+   template<bool bare_bone_search = true, bool collect_metrics = false>
+std::priority_queue<
     std::pair<dist_t, tableint>,
     std::vector<std::pair<dist_t, tableint>>,
     CompareByFirst>
-    searchBaseLayerST_omp(
+searchBaseLayerST_omp(
     tableint ep_id,
-    const void *data_point,
+    const void* data_point,
     size_t ef,
-    BaseFilterFunctor* isIdAllowed=nullptr,
-    BaseSearchStopCondition<dist_t>* stop_condition=nullptr)  const
+    BaseFilterFunctor* isIdAllowed = nullptr,
+    BaseSearchStopCondition<dist_t>* stop_condition = nullptr) const
 {
     // 1) 初始化
-    VisitedList *vl               = visited_list_pool_->getFreeVisitedList();
-    vl_type *visited_array        = vl->mass;
-    vl_type  visited_array_tag    = vl->curV;
+    VisitedList* vl            = visited_list_pool_->getFreeVisitedList();
+    vl_type* visited_array     = vl->mass;
+    vl_type  visited_array_tag = vl->curV;
 
-    std::priority_queue<std::pair<dist_t, tableint>, 
-                        std::vector<std::pair<dist_t, tableint>>, 
+    std::priority_queue<std::pair<dist_t, tableint>,
+                        std::vector<std::pair<dist_t, tableint>>,
                         CompareByFirst> top_candidates;
-    std::priority_queue<std::pair<dist_t, tableint>, 
-                        std::vector<std::pair<dist_t, tableint>>, 
+    std::priority_queue<std::pair<dist_t, tableint>,
+                        std::vector<std::pair<dist_t, tableint>>,
                         CompareByFirst> candidate_set;
 
-    dist_t lowerBound;
     // 2) 处理 entry point
+    dist_t lowerBound;
     if (bare_bone_search ||
         (!isMarkedDeleted(ep_id) &&
          (!isIdAllowed || (*isIdAllowed)(getExternalLabel(ep_id))))) {
         char* ep_data = getDataByInternalId(ep_id);
-        dist_t dist  = fstdistfunc_(data_point, ep_data, dist_func_param_);
-        lowerBound   = dist;
+        dist_t dist   = fstdistfunc_(data_point, ep_data, dist_func_param_);
+        lowerBound    = dist;
         top_candidates.emplace(dist, ep_id);
         if (!bare_bone_search && stop_condition) {
             stop_condition->add_point_to_result(getExternalLabel(ep_id), ep_data, dist);
@@ -1462,12 +1462,12 @@ class HierarchicalNSW : public AlgorithmInterface<dist_t> {
 
     // 3) 主循环
     while (!candidate_set.empty()) {
-        auto current = candidate_set.top(); 
+        auto current = candidate_set.top();
         candidate_set.pop();
-        dist_t candidate_dist = -current.first;
+        dist_t candidate_dist    = -current.first;
         tableint current_node_id = current.second;
 
-        // 判断是否停止
+        // 停止条件
         bool stop_flag = bare_bone_search
             ? (candidate_dist > lowerBound)
             : ( stop_condition
@@ -1476,17 +1476,17 @@ class HierarchicalNSW : public AlgorithmInterface<dist_t> {
               );
         if (stop_flag) break;
 
-        // 拿到 neighbor list
-        int *data = (int*)get_linklist0(current_node_id);
+        // 获取邻居列表
+        int* data = (int*)get_linklist0(current_node_id);
         size_t size = getListCount((linklistsizeint*)data);
+
         if (collect_metrics) {
             metric_hops++;
             metric_distance_computations += size;
         }
 
-        // 串行阈值
-        if (size <256) {
-            for (size_t j = 1; j <= size; ++j) {
+        if (size < 32) {
+             for (size_t j = 1; j <= size; ++j) {
                 int cand_id = data[j];
                 if (visited_array[cand_id] != visited_array_tag) {
                     visited_array[cand_id] = visited_array_tag;
@@ -1525,56 +1525,56 @@ class HierarchicalNSW : public AlgorithmInterface<dist_t> {
                         lowerBound = top_candidates.top().first;
                 }
             }
-        } 
-        else {
-            // 并行部分
+        } else {
+            // 并行分支
             int nthreads = omp_get_max_threads();
-            std::vector<std::vector<std::pair<dist_t,tableint>>> local_cands(nthreads);
-            std::vector<std::vector<std::pair<dist_t,tableint>>> local_tops(nthreads);
+            std::vector<std::vector<std::pair<dist_t, tableint>>> local_cands(nthreads);
+            std::vector<std::vector<std::pair<dist_t, tableint>>> local_tops(nthreads);
 
             #pragma omp parallel
             {
                 int tid = omp_get_thread_num();
-                auto &lc = local_cands[tid];
-                auto &lt = local_tops[tid];
+                auto& lc = local_cands[tid];
+                auto& lt = local_tops[tid];
 
                 #pragma omp for schedule(static)
                 for (int j = 1; j <= (int)size; ++j) {
                     int cand_id = data[j];
-                    // 原子标记
-                    if (__sync_bool_compare_and_swap(
-                            &visited_array[cand_id],
-                            visited_array_tag - 1,
-                            visited_array_tag)) 
-                    {
-                        char* obj = getDataByInternalId(cand_id);
-                        dist_t d = fstdistfunc_(data_point, obj, dist_func_param_);
+                    // 原子检查并标记
+                    vl_type old_tag = __atomic_load_n(&visited_array[cand_id], __ATOMIC_RELAXED);
+                    if (old_tag != visited_array_tag) {
+                        if (__sync_bool_compare_and_swap(
+                                &visited_array[cand_id],
+                                old_tag,
+                                visited_array_tag)) {
+                            // 唯一获得标记的线程进行距离计算
+                            char* obj = getDataByInternalId(cand_id);
+                            dist_t d = fstdistfunc_(data_point, obj, dist_func_param_);
 
-                        bool consider = (!bare_bone_search && stop_condition)
-                            ? stop_condition->should_consider_candidate(d, lowerBound)
-                            : (top_candidates.size() < ef || d < lowerBound);
-                        if (!consider) continue;
+                            bool consider = (!bare_bone_search && stop_condition)
+                                ? stop_condition->should_consider_candidate(d, lowerBound)
+                                : (top_candidates.size() < ef || d < lowerBound);
+                            if (!consider) continue;
 
-                        lc.emplace_back(d, cand_id);
-
-                        if (bare_bone_search ||
-                            (!isMarkedDeleted(cand_id) &&
-                             (!isIdAllowed || (*isIdAllowed)(getExternalLabel(cand_id))))) {
-                            lt.emplace_back(d, cand_id);
+                            lc.emplace_back(d, cand_id);
+                            if (bare_bone_search ||
+                                (!isMarkedDeleted(cand_id) &&
+                                 (!isIdAllowed || (*isIdAllowed)(getExternalLabel(cand_id))))) {
+                                lt.emplace_back(d, cand_id);
+                            }
                         }
                     }
-                }
-            } // end parallel
+                } // omp for
+            } // omp parallel
 
             // 合并线程结果
             for (int t = 0; t < nthreads; ++t) {
-                for (auto &p : local_cands[t]) {
+                for (auto& p : local_cands[t]) {
                     candidate_set.emplace(-p.first, p.second);
                 }
-                for (auto &p : local_tops[t]) {
+                for (auto& p : local_tops[t]) {
                     top_candidates.emplace(p.first, p.second);
-                    if (top_candidates.size() > ef)
-                        top_candidates.pop();
+                    if (top_candidates.size() > ef) top_candidates.pop();
                 }
             }
             if (!top_candidates.empty())

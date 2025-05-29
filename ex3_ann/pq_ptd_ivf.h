@@ -7,6 +7,7 @@
 #include <functional>
 #include <mutex>
 #include <condition_variable>
+#include"simd.h"
 #include "pq_ivf.h" // 引入基本的IVFPQ索引定义
 
 // 简易线程池实现（用于 IVFPQ 模块）
@@ -72,12 +73,8 @@ std::priority_queue<std::pair<float, uint32_t>> ivfpq_search_ptd(
     std::vector<CentDist> cd(index->nlist);
     for (size_t i = 0; i < index->nlist; ++i) {
         const float* cptr = index->centroids.data() + i * index->d;
-        float d2 = 0;
-        for (size_t dd = 0; dd < index->d; ++dd) {
-            float diff = query[dd] - cptr[dd];
-            d2 += diff * diff;
-        }
-        cd[i] = {d2, (uint32_t)i};
+        float dist2 = l2_dist_avx2(query, cptr, index->d);
+        cd[i] = {dist2, (uint32_t)i};
     }
     if (nprobe < index->nlist) {
         std::nth_element(cd.begin(), cd.begin() + nprobe, cd.end(),
@@ -106,11 +103,8 @@ std::priority_queue<std::pair<float, uint32_t>> ivfpq_search_ptd(
                 const auto &ids   = index->invlists[lid];
                 const auto &codes = index->codes[lid];
                 for (size_t j = 0; j < ids.size(); ++j) {
-                    float dist2 = 0;
-                    for (size_t m = 0; m < index->m; ++m) {
-                        uint8_t code = codes[j*index->m + m];
-                        dist2 += pq_dist_table[m*index->ksub + code];
-                    }
+                    const uint8_t* code = codes.data() + j * index->m;
+                    float dist2 = pq_dist_simd(pq_dist_table.data(), code, index->m, index->ksub);
                     out.emplace_back(dist2, ids[j]);
                 }
             });
@@ -159,12 +153,8 @@ std::vector<std::pair<float, uint32_t>> rerank_with_ptd(
                 for (size_t i = start; i < end; ++i) {
                     uint32_t id = candidates[i].second;
                     const float* vec = base + id * d;
-                    float d2 = 0;
-                    for (size_t j = 0; j < d; ++j) {
-                        float diff = query[j] - vec[j];
-                        d2 += diff * diff;
-                    }
-                    result[i].first = d2;
+                    float dist2 = l2_dist_avx2(query, vec, d);
+                    result[i].first = dist2;
                 }
             });
         }
@@ -194,12 +184,8 @@ std::priority_queue<std::pair<float, uint32_t>> ivfpq_search_ptd_rerank(
     std::vector<CentDist> cd(index->nlist);
     for (size_t i = 0; i < index->nlist; ++i) {
         const float* cptr = index->centroids.data() + i * index->d;
-        float d2 = 0;
-        for (size_t dd = 0; dd < index->d; ++dd) {
-            float diff = query[dd] - cptr[dd];
-            d2 += diff * diff;
-        }
-        cd[i] = {d2, (uint32_t)i};
+        float dist2 = l2_dist_avx2(query, cptr, index->d);
+        cd[i] = {dist2, (uint32_t)i};
     }
     if (nprobe < index->nlist) {
         std::nth_element(cd.begin(), cd.begin() + nprobe, cd.end(),
@@ -228,11 +214,8 @@ std::priority_queue<std::pair<float, uint32_t>> ivfpq_search_ptd_rerank(
                 const auto &ids   = index->invlists[lid];
                 const auto &codes = index->codes[lid];
                 for (size_t j = 0; j < ids.size(); ++j) {
-                    float dist2 = 0;
-                    for (size_t m = 0; m < index->m; ++m) {
-                        uint8_t code = codes[j*index->m + m];
-                        dist2 += pq_dist_table[m*index->ksub + code];
-                    }
+                    const uint8_t* code = codes.data() + j * index->m;
+                    float dist2 = pq_dist_simd(pq_dist_table.data(), code, index->m, index->ksub);
                     out.emplace_back(dist2, ids[j]);
                 }
             });

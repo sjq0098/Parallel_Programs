@@ -1,13 +1,14 @@
-// OpenMP 并行版 IVFPQ 搜索 + Re-ranking（ADC + 全局候选 + 动态调度）
+// 使用 SIMD 优化后的 OpenMP IVFPQ 搜索和重排序实现
+
 #include <vector>
 #include <queue>
 #include <cstdint>
 #include <algorithm>
 #include <omp.h>
-#include "pq_ivf.h"  // 引入 IVFPQIndex, compute_pq_distance_table
+#include "pq_ivf.h"  // 包含 IVFPQIndex 和 compute_pq_distance_table
+#include "simd.h"    // 包含 SIMD 加速函数
 
-
-// OpenMP 并行版 IVFPQ 搜索（ADC）
+// OpenMP 并行版 IVFPQ 搜索（SIMD 优化 ADC）
 std::priority_queue<std::pair<float, uint32_t>> ivfpq_search_omp(
     const IVFPQIndex* index,
     float* query,
@@ -15,77 +16,52 @@ std::priority_queue<std::pair<float, uint32_t>> ivfpq_search_omp(
     size_t nprobe,
     int num_threads = omp_get_max_threads())
 {
-    // 1. 串行找最近 nprobe 个簇中心（L2 距离平方）
     struct CentDist { float dist2; uint32_t idx; };
     std::vector<CentDist> cd(index->nlist);
-    
     for (size_t i = 0; i < index->nlist; ++i) {
         const float* cptr = index->centroids.data() + i * index->d;
-        float dist2 = 0;
-        for (size_t d = 0; d < index->d; ++d) {
-            float diff = query[d] - cptr[d];
-            dist2 += diff * diff;
-        }
-        cd[i].dist2 = dist2;
-        cd[i].idx   = uint32_t(i);
+        float dist2 = l2_dist_avx2(query, cptr, index->d);
+        cd[i] = { dist2, static_cast<uint32_t>(i) };
     }
     if (nprobe < index->nlist) {
         std::nth_element(cd.begin(), cd.begin() + nprobe, cd.end(),
-            [](auto &a, auto &b){ return a.dist2 < b.dist2; });
+                         [](auto &a, auto &b){ return a.dist2 < b.dist2; });
     }
     std::vector<uint32_t> probe_list;
     probe_list.reserve(nprobe);
     for (size_t i = 0; i < nprobe && i < index->nlist; ++i)
         probe_list.push_back(cd[i].idx);
-    
-    // 2. 串行构建 L2 距离表
+
     std::vector<float> pq_dist_table = compute_pq_distance_table(index, query);
 
-    // 3. 并行扫描倒排列表
     std::vector<std::priority_queue<std::pair<float, uint32_t>>> local_q(num_threads);
-    
     #pragma omp parallel num_threads(num_threads)
     {
         int tid = omp_get_thread_num();
         auto &q = local_q[tid];
-        
         #pragma omp for schedule(static)
         for (int pi = 0; pi < (int)probe_list.size(); ++pi) {
             const auto& ids   = index->invlists[probe_list[pi]];
             const auto& codes = index->codes[probe_list[pi]];
             for (size_t i = 0; i < ids.size(); ++i) {
-                float dist2 = 0;
-                for (size_t m = 0; m < index->m; ++m) {
-                    uint8_t code = codes[i*index->m + m];
-                    dist2 += pq_dist_table[m*index->ksub + code];
-                }
-                if (q.size() < k) {
-                    q.emplace(dist2, ids[i]);
-                } else if (dist2 < q.top().first) {
-                    q.pop();
-                    q.emplace(dist2, ids[i]);
-                }
+                float dist2 = pq_dist_simd(pq_dist_table.data(), &codes[i * index->m], index->m, index->ksub);
+                if (q.size() < k) q.emplace(dist2, ids[i]);
+                else if (dist2 < q.top().first) { q.pop(); q.emplace(dist2, ids[i]); }
             }
         }
     }
-    
-    // 4. 归并
     std::priority_queue<std::pair<float, uint32_t>> result;
     for (auto &q : local_q) {
         while (!q.empty()) {
             auto p = q.top(); q.pop();
-            if (result.size() < k) {
-                result.push(p);
-            } else if (p.first < result.top().first) {
-                result.pop();
-                result.push(p);
-            }
+            if (result.size() < k) result.push(p);
+            else if (p.first < result.top().first) { result.pop(); result.push(p); }
         }
     }
     return result;
 }
 
-// OpenMP版本的重排序函数
+// OpenMP 并行版精排函数（使用 SIMD 加速 L2）
 std::vector<std::pair<float, uint32_t>> rerank_with_omp(
     const float* base,
     const float* query,
@@ -95,33 +71,23 @@ std::vector<std::pair<float, uint32_t>> rerank_with_omp(
     int num_threads)
 {
     std::vector<std::pair<float, uint32_t>> result(candidates);
-    
     #pragma omp parallel for num_threads(num_threads) schedule(static)
     for (int i = 0; i < (int)candidates.size(); ++i) {
         uint32_t id = candidates[i].second;
         const float* vec = base + id * d;
-        float dist2 = 0;
-        for (size_t j = 0; j < d; ++j) {
-            float diff = query[j] - vec[j];
-            dist2 += diff * diff;
-        }
-        result[i].first = dist2;
+        result[i].first = l2_dist_avx2(query, vec, d);
     }
-    
-    // 部分排序，只保留前k个结果
     if (k < result.size()) {
         std::partial_sort(result.begin(), result.begin() + k, result.end(),
-            [](auto &a, auto &b) { return a.first < b.first; });
+                          [](auto &a, auto &b) { return a.first < b.first; });
         result.resize(k);
     } else {
         std::sort(result.begin(), result.end(),
-            [](auto &a, auto &b) { return a.first < b.first; });
+                  [](auto &a, auto &b) { return a.first < b.first; });
     }
-    
     return result;
 }
 
-// OpenMP 并行版 IVFPQ 搜索并重排序
 std::priority_queue<std::pair<float, uint32_t>> ivfpq_search_omp_rerank(
     const IVFPQIndex* index,
     const float* base,
@@ -136,11 +102,7 @@ std::priority_queue<std::pair<float, uint32_t>> ivfpq_search_omp_rerank(
     std::vector<CentDist> cd(index->nlist);
     for (size_t i = 0; i < index->nlist; ++i) {
         const float* cptr = index->centroids.data() + i * index->d;
-        float sum2 = 0;
-        for (size_t d0 = 0; d0 < index->d; ++d0) {
-            float diff = query[d0] - cptr[d0];
-            sum2 += diff * diff;
-        }
+        float sum2 = l2_dist_avx2(query, cptr, index->d);
         cd[i] = { sum2, uint32_t(i) };
     }
     if (nprobe < index->nlist) {
@@ -160,9 +122,7 @@ std::priority_queue<std::pair<float, uint32_t>> ivfpq_search_omp_rerank(
 
     // 3. 并行生成 Top-L 候选 (Approximate)
     std::vector<std::vector<std::pair<float,uint32_t>>> local_cands(num_threads);
-    // 预估每线程候选量并 reserve
     size_t avg_size = 0;
-    // 估算所有倒排列表元素总和
     size_t total_inv = 0;
     for (auto lid : probe_list) total_inv += index->invlists[lid].size();
     avg_size = (total_inv + num_threads - 1) / num_threads;
@@ -178,11 +138,12 @@ std::priority_queue<std::pair<float, uint32_t>> ivfpq_search_omp_rerank(
             const auto &ids   = index->invlists[lid];
             const auto &codes = index->codes[lid];
             for (size_t i = 0; i < ids.size(); ++i) {
-                float dist2 = 0;
-                for (size_t m = 0; m < index->m; ++m) {
-                    uint8_t code = codes[i * index->m + m];
-                    dist2 += pq_dist[m * index->ksub + code];
-                }
+                float dist2 = pq_dist_simd(
+                    pq_dist.data(),
+                    codes.data() + i * index->m,
+                    index->m,
+                    index->ksub
+                );
                 cand.emplace_back(dist2, ids[i]);
             }
         }
@@ -204,7 +165,6 @@ std::priority_queue<std::pair<float, uint32_t>> ivfpq_search_omp_rerank(
         );
         all.resize(topL);
     }
-    // 完全排序保证顺序
     std::sort(
         all.begin(), all.end(),
         [](auto &a, auto &b){ return a.first < b.first; }
@@ -213,20 +173,16 @@ std::priority_queue<std::pair<float, uint32_t>> ivfpq_search_omp_rerank(
     // 6. 并行重排序: 对 Top-L 做精确 L2
     std::vector<std::pair<float,uint32_t>> reranked;
     reranked.reserve(std::min(k, all.size()));
-    // 并行计算精确距离
+
     #pragma omp parallel for num_threads(num_threads) schedule(static)
     for (int i = 0; i < (int)all.size(); ++i) {
-        float dist2 = 0;
         uint32_t id = all[i].second;
         const float* vec = base + id * index->d;
-        for (size_t d0 = 0; d0 < index->d; ++d0) {
-            float diff = query[d0] - vec[d0];
-            dist2 += diff * diff;
-        }
-        // 单线程写入结果
+        float dist2 = l2_dist_avx2(query, vec, index->d);
         #pragma omp critical
         reranked.emplace_back(dist2, id);
     }
+
     // 7. 部分排序取最终 top-k
     if (reranked.size() > k) {
         std::nth_element(
@@ -245,3 +201,4 @@ std::priority_queue<std::pair<float, uint32_t>> ivfpq_search_omp_rerank(
     for (auto &p : reranked) result.push(p);
     return result;
 }
+

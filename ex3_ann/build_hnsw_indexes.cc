@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
     std::string base_data_file   = "DEEP100K.base.100k.fbin";
     std::string output_index_dir = "files/";              
     // 要测试的 HNSW 参数组合
-    std::vector<int> M_values            = {8, 16, 24};
+    std::vector<int> M_values            = {128,256};
     std::vector<int> efConstruction_vals = {100, 150, 200};
     // -------------------------------
 

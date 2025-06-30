@@ -9,11 +9,7 @@
 #include <omp.h>
 
 
-
-
-
-
-// 并行版 IVF-Flat 搜索
+// openmp并行版 IVF-Flat 搜索
 //   base:        所有原始向量起始地址（row-major）
 //   query:       单条查询向量
 //   base_number: 向量总数（未在函数体内使用，但可用于扩展或检查）

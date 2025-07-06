@@ -1,3 +1,0 @@
-Method: PQ8 Search
-Average recall: 0.238001
-Average latency (us): 917.648

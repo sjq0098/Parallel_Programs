@@ -1,0 +1,9 @@
+algorithm,parallel,num_trees,search_nodes,num_tables,hash_bits,search_radius,min_candidates,recall_mean,latency_mean_us,speedup
+KDTree Hybrid Optimized,true,5,3000,-1,-1,-1,-1,0.999000,1441.66,2.08
+KDTree Hybrid Optimized,true,8,5000,-1,-1,-1,-1,1.000000,2423.06,1.24
+KDTree Hybrid Optimized,true,10,8000,-1,-1,-1,-1,1.000000,3824.51,0.78
+KDTree Hybrid Optimized,true,12,12000,-1,-1,-1,-1,1.000000,6246.45,0.48
+LSH SIMD Parallel,true,-1,-1,60,14,8,1500,0.734000,1165.10,2.57
+LSH SIMD Parallel,true,-1,-1,90,14,10,2000,0.789000,1325.89,2.26
+LSH SIMD Parallel,true,-1,-1,120,14,10,2000,0.888000,2126.67,1.41
+LSH SIMD Parallel,true,-1,-1,150,14,12,2500,0.894000,2190.91,1.37

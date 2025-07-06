@@ -1,0 +1,23 @@
+algorithm,parallel,num_trees,search_nodes,num_tables,hash_bits,search_radius,min_candidates,recall_mean,recall_std,latency_mean_us,latency_std_us,speedup
+KDTree Hybrid Optimized,true,5,3000,-1,-1,-1,-1,0.998760,0.017276,1607.00,449.42,4.73
+KDTree Hybrid Optimized,true,5,5000,-1,-1,-1,-1,0.999920,0.003999,2501.37,1158.00,3.04
+KDTree Hybrid Optimized,true,5,8000,-1,-1,-1,-1,1.000000,0.000000,4233.77,1855.45,1.80
+KDTree Hybrid Optimized,true,5,12000,-1,-1,-1,-1,1.000000,0.000000,4949.07,549.02,1.54
+KDTree Hybrid Optimized,true,5,15000,-1,-1,-1,-1,1.000000,0.000000,6186.87,768.52,1.23
+KDTree Hybrid Optimized,true,8,3000,-1,-1,-1,-1,0.999960,0.002000,2070.20,729.96,3.67
+KDTree Hybrid Optimized,true,8,5000,-1,-1,-1,-1,1.000000,0.000000,3476.07,1318.85,2.19
+KDTree Hybrid Optimized,true,8,8000,-1,-1,-1,-1,1.000000,0.000000,5584.08,2402.63,1.36
+KDTree Hybrid Optimized,true,8,12000,-1,-1,-1,-1,1.000000,0.000000,7547.97,2327.43,1.01
+KDTree Hybrid Optimized,true,8,15000,-1,-1,-1,-1,1.000000,0.000000,9900.79,2875.32,0.77
+KDTree Hybrid Optimized,true,10,3000,-1,-1,-1,-1,1.000000,0.000000,3732.39,1944.57,2.04
+KDTree Hybrid Optimized,true,10,5000,-1,-1,-1,-1,1.000000,0.000000,4642.01,1606.96,1.64
+KDTree Hybrid Optimized,true,10,8000,-1,-1,-1,-1,1.000000,0.000000,6908.61,2395.92,1.10
+KDTree Hybrid Optimized,true,10,12000,-1,-1,-1,-1,1.000000,0.000000,9867.36,3097.42,0.77
+KDTree Hybrid Optimized,true,10,15000,-1,-1,-1,-1,1.000000,0.000000,11212.11,3723.60,0.68
+KDTree Hybrid Optimized,true,12,3000,-1,-1,-1,-1,1.000000,0.000000,4583.47,2389.49,1.66
+KDTree Hybrid Optimized,true,12,5000,-1,-1,-1,-1,1.000000,0.000000,5639.63,2119.14,1.35
+KDTree Hybrid Optimized,true,12,8000,-1,-1,-1,-1,1.000000,0.000000,8058.50,2469.76,0.94
+KDTree Hybrid Optimized,true,12,12000,-1,-1,-1,-1,1.000000,0.000000,10929.51,2942.72,0.70
+KDTree Hybrid Optimized,true,12,15000,-1,-1,-1,-1,1.000000,0.000000,14309.85,4703.34,0.53
+KDTree Hybrid Optimized,true,15,3000,-1,-1,-1,-1,1.000000,0.000000,4384.37,1998.44,1.73
+KDTree Hybrid Optimized,true,15,5000,-1,-1,-1,-1,1.000000,0.000000,6455.62,2156.47,1.18

@@ -3,9 +3,29 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
-# Set English font and style to avoid Chinese font issues
-plt.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial']
-plt.rcParams['axes.unicode_minus'] = False
+# Set font and style settings
+try:
+    # Try different fonts
+    import matplotlib
+    import platform
+    
+    if platform.system() == 'Windows':
+        # Common fonts for Windows
+        plt.rcParams['font.sans-serif'] = ['Arial', 'DejaVu Sans', 'Calibri']
+    else:
+        # Linux/Mac systems
+        plt.rcParams['font.sans-serif'] = ['Arial', 'DejaVu Sans', 'Helvetica']
+    
+    plt.rcParams['axes.unicode_minus'] = False
+    
+    # Test if font is available
+    test_fig, test_ax = plt.subplots(1, 1, figsize=(1, 1))
+    test_ax.text(0.5, 0.5, 'Test', fontsize=12)
+    plt.close(test_fig)
+    
+except Exception as e:
+    print(f"Font setting failed, using default: {e}")
+    plt.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial']
 
 # Try to use seaborn style
 try:
@@ -22,15 +42,15 @@ def load_data():
     df_2proc = pd.read_csv('results_mpi_ivf_2proc.csv')
     df_4proc = pd.read_csv('results_mpi_ivf_4proc.csv')
     
-    # Combine data
+    # Merge data
     df_all = pd.concat([df_1proc, df_2proc, df_4proc], ignore_index=True)
     return df_all, df_1proc, df_2proc, df_4proc
 
 def analyze_performance_metrics(df_all):
     """Analyze performance metrics"""
-    print("=== MPI Process Count Impact Analysis on IVF Algorithm ===\n")
+    print("=== Impact Analysis of MPI Process Count on IVF Algorithm Performance ===\n")
     
-    # Group analysis by process count
+    # Analyze by process count
     for processes in [1, 2, 4]:
         df_proc = df_all[df_all['mpi_processes'] == processes]
         avg_latency = df_proc['latency_us'].mean()
@@ -38,15 +58,15 @@ def analyze_performance_metrics(df_all):
         avg_recall = df_proc['recall'].mean()
         efficiency = df_proc['recall'].sum() / df_proc['latency_us'].sum() * 1000
         
-        print(f"{processes} Process Configuration:")
-        print(f"  Average Query Latency: {avg_latency:.1f}μs")
-        print(f"  Average Build Time: {avg_build_time:.1f}ms")
-        print(f"  Average Recall: {avg_recall:.4f}")
-        print(f"  Algorithm Efficiency: {efficiency:.4f}")
+        print(f"{processes} processes configuration:")
+        print(f"  Average query latency: {avg_latency:.1f}μs")
+        print(f"  Average build time: {avg_build_time:.1f}ms")
+        print(f"  Average recall: {avg_recall:.4f}")
+        print(f"  Algorithm efficiency: {efficiency:.4f}")
         print()
     
-    # Calculate speedup ratios
-    print("Speedup Analysis:")
+    # Calculate speedup
+    print("Speedup analysis:")
     df_1 = df_all[df_all['mpi_processes'] == 1]
     df_2 = df_all[df_all['mpi_processes'] == 2]
     df_4 = df_all[df_all['mpi_processes'] == 4]
@@ -67,13 +87,13 @@ def analyze_performance_metrics(df_all):
         build_speedup_4 = build_1 / build_4
         
         print(f"nlist={nlist}:")
-        print(f"  Query Speedup: 2proc={speedup_2:.2f}x, 4proc={speedup_4:.2f}x")
-        print(f"  Build Speedup: 2proc={build_speedup_2:.2f}x, 4proc={build_speedup_4:.2f}x")
+        print(f"  Query speedup: 2 processes={speedup_2:.2f}x, 4 processes={speedup_4:.2f}x")
+        print(f"  Build speedup: 2 processes={build_speedup_2:.2f}x, 4 processes={build_speedup_4:.2f}x")
 
 def create_comprehensive_analysis(df_all):
     """Create comprehensive analysis charts"""
     fig, axes = plt.subplots(3, 2, figsize=(16, 18))
-    fig.suptitle('MPI Process Count Impact Analysis on IVF Algorithm Performance', fontsize=16, fontweight='bold')
+    fig.suptitle('Impact Analysis of MPI Process Count on IVF Algorithm Performance', fontsize=16, fontweight='bold')
     
     # 1. Query latency comparison (grouped by nlist)
     for nlist in [64, 128, 256, 512]:
@@ -81,10 +101,10 @@ def create_comprehensive_analysis(df_all):
             subset = df_all[(df_all['nlist'] == nlist) & (df_all['mpi_processes'] == processes)]
             if len(subset) > 0:
                 axes[0, 0].plot(subset['nprobe'], subset['latency_us'], 
-                              marker='o', label=f'{processes}proc nlist={nlist}', linewidth=2)
+                              marker='o', label=f'{processes} processes nlist={nlist}', linewidth=2)
     
     axes[0, 0].set_xlabel('nprobe')
-    axes[0, 0].set_ylabel('Query Latency (microseconds)')
+    axes[0, 0].set_ylabel('Query Latency (μs)')
     axes[0, 0].set_title('Query Latency Comparison')
     axes[0, 0].legend()
     axes[0, 0].grid(True, alpha=0.3)
@@ -109,10 +129,10 @@ def create_comprehensive_analysis(df_all):
     
     for i, proc in enumerate(processes_values):
         axes[0, 1].bar(x + i*width, build_times[proc], width, 
-                      label=f'{proc} Processes', alpha=0.8)
+                      label=f'{proc} processes', alpha=0.8)
     
     axes[0, 1].set_xlabel('nlist')
-    axes[0, 1].set_ylabel('Build Time (milliseconds)')
+    axes[0, 1].set_ylabel('Build Time (ms)')
     axes[0, 1].set_title('Build Time Comparison')
     axes[0, 1].set_xticks(x + width)
     axes[0, 1].set_xticklabels(nlist_values)
@@ -133,15 +153,15 @@ def create_comprehensive_analysis(df_all):
     for proc in [2, 4]:
         subset = speedup_df[speedup_df['processes'] == proc]
         axes[1, 0].plot(subset['nlist'], subset['speedup'], 
-                       marker='o', label=f'{proc} Processes', linewidth=2, markersize=8)
+                       marker='o', label=f'{proc} processes', linewidth=2, markersize=8)
     
     # Add ideal speedup lines
     axes[1, 0].plot(nlist_values, [2]*4, '--', alpha=0.7, label='Ideal 2x Speedup')
     axes[1, 0].plot(nlist_values, [4]*4, '--', alpha=0.7, label='Ideal 4x Speedup')
     
     axes[1, 0].set_xlabel('nlist')
-    axes[1, 0].set_ylabel('Speedup Ratio')
-    axes[1, 0].set_title('Query Latency Speedup Ratio')
+    axes[1, 0].set_ylabel('Speedup')
+    axes[1, 0].set_title('Query Latency Speedup')
     axes[1, 0].legend()
     axes[1, 0].grid(True, alpha=0.3)
     
@@ -159,7 +179,7 @@ def create_comprehensive_analysis(df_all):
     for proc in processes_values:
         subset = efficiency_df[efficiency_df['processes'] == proc]
         axes[1, 1].plot(subset['nlist'], subset['efficiency'], 
-                       marker='o', label=f'{proc} Processes', linewidth=2, markersize=8)
+                       marker='o', label=f'{proc} processes', linewidth=2, markersize=8)
     
     axes[1, 1].set_xlabel('nlist')
     axes[1, 1].set_ylabel('Efficiency (Recall/Latency × 1000)')
@@ -167,19 +187,26 @@ def create_comprehensive_analysis(df_all):
     axes[1, 1].legend()
     axes[1, 1].grid(True, alpha=0.3)
     
-    # 5. Recall-latency tradeoff (scatter plot)
-    colors = ['blue', 'green', 'red']
-    for i, proc in enumerate(processes_values):
-        subset = df_all[df_all['mpi_processes'] == proc]
-        axes[2, 0].scatter(subset['latency_us'], subset['recall'], 
-                          alpha=0.7, s=60, label=f'{proc} Processes', c=colors[i])
+    # 5. Recall-latency tradeoff analysis (line plots)
+    colors = ['#1f77b4', '#ff7f0e', '#2ca02c']
+    markers = ['o', 's', '^']
     
-    axes[2, 0].set_xlabel('Query Latency (microseconds)')
-    axes[2, 0].set_ylabel('Recall')
-    axes[2, 0].set_title('Recall-Latency Tradeoff')
+    # Group by process count and connect lines
+    for i, proc in enumerate(processes_values):
+        subset = df_all[df_all['mpi_processes'] == proc].sort_values('recall')
+        if len(subset) > 0:
+            axes[2, 0].plot(subset['recall'] * 100, subset['latency_us'],
+                           marker=markers[i], color=colors[i],
+                           linewidth=2, markersize=6, label=f'{proc} processes',
+                           markerfacecolor=colors[i], markeredgecolor='white', markeredgewidth=0.5)
+    
+    axes[2, 0].set_xlabel('Recall (%)')
+    axes[2, 0].set_ylabel('Query Latency (μs)')
+    axes[2, 0].set_title('Recall-Latency Tradeoff Curves')
     axes[2, 0].legend()
     axes[2, 0].grid(True, alpha=0.3)
-    axes[2, 0].set_xscale('log')
+    axes[2, 0].set_yscale('log')
+    axes[2, 0].set_xlim(30, 105)
     
     # 6. Parallel efficiency (relative to ideal case)
     parallel_efficiency = []
@@ -196,7 +223,7 @@ def create_comprehensive_analysis(df_all):
     for proc in [2, 4]:
         subset = parallel_eff_df[parallel_eff_df['processes'] == proc]
         axes[2, 1].plot(subset['nlist'], subset['efficiency'], 
-                       marker='o', label=f'{proc} Processes', linewidth=2, markersize=8)
+                       marker='o', label=f'{proc} processes', linewidth=2, markersize=8)
     
     axes[2, 1].axhline(y=100, color='red', linestyle='--', alpha=0.7, label='Ideal Efficiency (100%)')
     axes[2, 1].set_xlabel('nlist')
@@ -206,6 +233,7 @@ def create_comprehensive_analysis(df_all):
     axes[2, 1].grid(True, alpha=0.3)
     
     plt.tight_layout()
+    plt.subplots_adjust(right=0.85)  # Leave space for legend
     plt.savefig('mpi_processes_analysis_en.png', dpi=300, bbox_inches='tight')
     plt.show()
 
@@ -213,7 +241,7 @@ def calculate_detailed_metrics(df_all):
     """Calculate detailed performance metrics"""
     print("\n=== Detailed Performance Metrics Analysis ===")
     
-    # Calculate metrics for each configuration
+    # Calculate metrics
     metrics = {}
     for proc in [1, 2, 4]:
         subset = df_all[df_all['mpi_processes'] == proc]
@@ -228,10 +256,10 @@ def calculate_detailed_metrics(df_all):
     print("Processes\tAvg Latency(μs)\tAvg Build Time(ms)\tAvg Recall\tAlgorithm Efficiency")
     for proc in [1, 2, 4]:
         m = metrics[proc]
-        print(f"{proc}\t\t{m['avg_latency']:.1f}\t\t{m['avg_build_time']:.1f}\t\t{m['avg_recall']:.4f}\t\t{m['total_efficiency']:.4f}")
+        print(f"{proc}\t\t{m['avg_latency']:.1f}\t\t{m['avg_build_time']:.1f}\t\t\t{m['avg_recall']:.4f}\t\t{m['total_efficiency']:.4f}")
     
-    # Calculate improvement rates
-    print("\nPerformance Improvement Relative to Single Process:")
+    # Calculate improvement
+    print("\nPerformance improvement relative to single process:")
     baseline_latency = metrics[1]['avg_latency']
     baseline_build = metrics[1]['avg_build_time']
     
@@ -240,10 +268,10 @@ def calculate_detailed_metrics(df_all):
         build_improvement = (baseline_build - metrics[proc]['avg_build_time']) / baseline_build * 100
         efficiency_improvement = (metrics[proc]['total_efficiency'] - metrics[1]['total_efficiency']) / metrics[1]['total_efficiency'] * 100
         
-        print(f"{proc} Processes:")
-        print(f"  Query Latency Improvement: {latency_improvement:.2f}%")
-        print(f"  Build Time Improvement: {build_improvement:.2f}%")
-        print(f"  Algorithm Efficiency Improvement: {efficiency_improvement:.2f}%")
+        print(f"{proc} processes:")
+        print(f"  Query latency improvement: {latency_improvement:.2f}%")
+        print(f"  Build time improvement: {build_improvement:.2f}%")
+        print(f"  Algorithm efficiency improvement: {efficiency_improvement:.2f}%")
 
 if __name__ == "__main__":
     try:
@@ -252,5 +280,5 @@ if __name__ == "__main__":
         calculate_detailed_metrics(df_all)
         create_comprehensive_analysis(df_all)
     except Exception as e:
-        print(f"Error during analysis: {e}")
-        print("Please ensure CSV files exist and are properly formatted") 
+        print(f"Error occurred during analysis: {e}")
+        print("Please ensure CSV files exist and are formatted correctly") 

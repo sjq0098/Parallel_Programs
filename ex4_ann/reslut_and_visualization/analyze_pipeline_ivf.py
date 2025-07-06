@@ -130,17 +130,43 @@ for i in range(len(pivot_table.index)):
 
 plt.colorbar(im, ax=axes[1, 0])
 
-# 5. 召回率-延迟权衡分析
-axes[1, 1].scatter(df_pipeline['latency_us_mean'], df_pipeline['recall_mean'], 
-                  alpha=0.7, s=60, label='流水线算法', c='blue')
-axes[1, 1].scatter(df_mpi['latency_us'], df_mpi['recall'], 
-                  alpha=0.7, s=60, label='普通MPI算法', c='red', marker='s')
-axes[1, 1].set_xlabel('延迟 (微秒)')
-axes[1, 1].set_ylabel('召回率')
-axes[1, 1].set_title('召回率-延迟权衡')
-axes[1, 1].legend()
+# 5. 召回率-延迟权衡分析 (描点连线)
+colors_pipeline = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']
+colors_mpi = ['#17becf', '#bcbd22', '#e377c2', '#8c564b', '#7f7f7f']
+markers_pipeline = ['o', 's', '^', 'D', 'v']
+markers_mpi = ['o', 's', '^', 'D', 'v']
+
+# 流水线算法 - 按nlist分组连线
+nlist_values_pipeline = sorted(df_pipeline['nlist'].unique())
+for i, nlist in enumerate(nlist_values_pipeline):
+    pipeline_subset = df_pipeline[df_pipeline['nlist'] == nlist].sort_values('recall_mean')
+    if len(pipeline_subset) > 0:
+        color_idx = i % len(colors_pipeline)
+        marker_idx = i % len(markers_pipeline)
+        axes[1, 1].plot(pipeline_subset['recall_mean'] * 100, pipeline_subset['latency_us_mean'],
+                       marker=markers_pipeline[marker_idx], color=colors_pipeline[color_idx],
+                       linewidth=2, markersize=6, label=f'流水线 nlist={nlist}',
+                       markerfacecolor=colors_pipeline[color_idx], markeredgecolor='white', markeredgewidth=0.5)
+
+# 普通MPI算法 - 按nlist分组连线
+nlist_values_mpi = sorted(df_mpi['nlist'].unique())
+for i, nlist in enumerate(nlist_values_mpi):
+    mpi_subset = df_mpi[df_mpi['nlist'] == nlist].sort_values('recall')
+    if len(mpi_subset) > 0:
+        color_idx = i % len(colors_mpi)
+        marker_idx = i % len(markers_mpi)
+        axes[1, 1].plot(mpi_subset['recall'] * 100, mpi_subset['latency_us'],
+                       marker=markers_mpi[marker_idx], color=colors_mpi[color_idx],
+                       linewidth=2, markersize=6, linestyle='--', label=f'普通MPI nlist={nlist}',
+                       markerfacecolor=colors_mpi[color_idx], markeredgecolor='white', markeredgewidth=0.5)
+
+axes[1, 1].set_xlabel('召回率 (%)')
+axes[1, 1].set_ylabel('延迟 (微秒)')
+axes[1, 1].set_title('召回率-延迟权衡曲线')
+axes[1, 1].legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 axes[1, 1].grid(True, alpha=0.3)
-axes[1, 1].set_xscale('log')
+axes[1, 1].set_yscale('log')
+axes[1, 1].set_xlim(30, 105)
 
 # 6. 效率指标：召回率/延迟比率
 df_pipeline['efficiency'] = df_pipeline['recall_mean'] / df_pipeline['latency_us_mean'] * 1000
@@ -164,6 +190,7 @@ axes[1, 2].legend()
 axes[1, 2].grid(True, alpha=0.3)
 
 plt.tight_layout()
+plt.subplots_adjust(right=0.85)  # 为图例留出空间
 plt.savefig('pipeline_ivf_analysis.png', dpi=300, bbox_inches='tight')
 plt.show()
 

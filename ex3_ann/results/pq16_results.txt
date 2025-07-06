@@ -1,3 +1,0 @@
-Method: PQ16 Search
-Average recall: 0.4341
-Average latency (us): 1740.72

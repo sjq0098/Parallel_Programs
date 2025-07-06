@@ -1,3 +1,0 @@
-Method: SQ Flat Search
-Average recall: 0.979653
-Average latency (us): 3668.85

@@ -189,19 +189,26 @@ def create_comprehensive_analysis(df_all):
     axes[1, 1].legend()
     axes[1, 1].grid(True, alpha=0.3)
     
-    # 5. 召回率-延迟权衡 (散点图)
-    colors = ['blue', 'green', 'red']
-    for i, proc in enumerate(processes_values):
-        subset = df_all[df_all['mpi_processes'] == proc]
-        axes[2, 0].scatter(subset['latency_us'], subset['recall'], 
-                          alpha=0.7, s=60, label=f'{proc}进程', c=colors[i])
+    # 5. 召回率-延迟权衡分析 (描点连线)
+    colors = ['#1f77b4', '#ff7f0e', '#2ca02c']
+    markers = ['o', 's', '^']
     
-    axes[2, 0].set_xlabel('查询延迟 (微秒)')
-    axes[2, 0].set_ylabel('召回率')
-    axes[2, 0].set_title('召回率-延迟权衡')
+    # 按进程数分组连线
+    for i, proc in enumerate(processes_values):
+        subset = df_all[df_all['mpi_processes'] == proc].sort_values('recall')
+        if len(subset) > 0:
+            axes[2, 0].plot(subset['recall'] * 100, subset['latency_us'],
+                           marker=markers[i], color=colors[i],
+                           linewidth=2, markersize=6, label=f'{proc}进程',
+                           markerfacecolor=colors[i], markeredgecolor='white', markeredgewidth=0.5)
+    
+    axes[2, 0].set_xlabel('召回率 (%)')
+    axes[2, 0].set_ylabel('查询延迟 (微秒)')
+    axes[2, 0].set_title('召回率-延迟权衡曲线')
     axes[2, 0].legend()
     axes[2, 0].grid(True, alpha=0.3)
-    axes[2, 0].set_xscale('log')
+    axes[2, 0].set_yscale('log')
+    axes[2, 0].set_xlim(30, 105)
     
     # 6. 并行效率 (相对于理想情况)
     parallel_efficiency = []
@@ -228,6 +235,7 @@ def create_comprehensive_analysis(df_all):
     axes[2, 1].grid(True, alpha=0.3)
     
     plt.tight_layout()
+    plt.subplots_adjust(right=0.85)  # 为图例留出空间
     plt.savefig('mpi_processes_analysis.png', dpi=300, bbox_inches='tight')
     plt.show()
 

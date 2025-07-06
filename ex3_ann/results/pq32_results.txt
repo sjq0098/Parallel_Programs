@@ -1,3 +1,0 @@
-Method: PQ32 Search
-Average recall: 0.685149
-Average latency (us): 3203.74
